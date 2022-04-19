@@ -18,7 +18,7 @@ package rpc
 
 import (
 	"context"
-	"encoding/json"
+	json "github.com/json-iterator/go"
 	"fmt"
 	"math"
 	"strconv"

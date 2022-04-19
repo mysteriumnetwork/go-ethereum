@@ -18,7 +18,7 @@
 package js
 
 import (
-	"encoding/json"
+	json "github.com/json-iterator/go"
 	"errors"
 	"fmt"
 	"math/big"

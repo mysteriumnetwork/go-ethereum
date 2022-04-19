@@ -19,8 +19,8 @@ package simulations
 import (
 	"bytes"
 	"context"
-	"encoding/json"
 	"fmt"
+	json "github.com/json-iterator/go"
 	"reflect"
 	"strconv"
 	"strings"

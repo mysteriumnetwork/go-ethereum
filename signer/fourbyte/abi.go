@@ -18,8 +18,8 @@ package fourbyte
 
 import (
 	"bytes"
-	"encoding/json"
 	"fmt"
+	json "github.com/json-iterator/go"
 	"strings"
 
 	"github.com/ethereum/go-ethereum/accounts/abi"

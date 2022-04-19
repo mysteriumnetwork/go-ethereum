@@ -19,8 +19,8 @@ package adapters
 import (
 	"crypto/ecdsa"
 	"encoding/hex"
-	"encoding/json"
 	"fmt"
+	json "github.com/json-iterator/go"
 	"net"
 	"os"
 	"strconv"

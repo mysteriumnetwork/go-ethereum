@@ -3,7 +3,7 @@
 package beacon
 
 import (
-	"encoding/json"
+	json "github.com/json-iterator/go"
 	"errors"
 
 	"github.com/ethereum/go-ethereum/common"

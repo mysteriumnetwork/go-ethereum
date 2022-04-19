@@ -17,8 +17,8 @@
 package abi
 
 import (
-	"encoding/json"
 	"fmt"
+	json "github.com/json-iterator/go"
 	"reflect"
 	"strings"
 )

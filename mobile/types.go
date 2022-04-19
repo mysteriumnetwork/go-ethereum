@@ -19,9 +19,9 @@
 package geth
 
 import (
-	"encoding/json"
 	"errors"
 	"fmt"
+	json "github.com/json-iterator/go"
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core/types"

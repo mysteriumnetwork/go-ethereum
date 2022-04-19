@@ -17,8 +17,8 @@
 package hexutil_test
 
 import (
-	"encoding/json"
 	"fmt"
+	json "github.com/json-iterator/go"
 
 	"github.com/ethereum/go-ethereum/common/hexutil"
 )

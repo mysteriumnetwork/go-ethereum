@@ -17,7 +17,7 @@
 package native
 
 import (
-	"encoding/json"
+	json "github.com/json-iterator/go"
 	"math/big"
 	"time"
 

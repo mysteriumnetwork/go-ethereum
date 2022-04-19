@@ -23,10 +23,10 @@ package main
 import (
 	"bytes"
 	"context"
-	"encoding/json"
 	"errors"
 	"flag"
 	"fmt"
+	json "github.com/json-iterator/go"
 	"html/template"
 	"io/ioutil"
 	"math"

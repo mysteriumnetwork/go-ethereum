@@ -18,8 +18,8 @@ package core
 
 import (
 	"bufio"
-	"encoding/json"
 	"fmt"
+	json "github.com/json-iterator/go"
 	"os"
 	"strings"
 	"sync"

@@ -19,8 +19,8 @@ package types
 import (
 	"bytes"
 	"crypto/ecdsa"
-	"encoding/json"
 	"fmt"
+	json "github.com/json-iterator/go"
 	"math/big"
 	"math/rand"
 	"reflect"

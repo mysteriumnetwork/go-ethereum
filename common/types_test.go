@@ -19,8 +19,8 @@ package common
 import (
 	"bytes"
 	"database/sql/driver"
-	"encoding/json"
 	"fmt"
+	json "github.com/json-iterator/go"
 	"math/big"
 	"reflect"
 	"strings"

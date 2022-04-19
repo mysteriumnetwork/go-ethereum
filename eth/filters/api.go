@@ -18,9 +18,9 @@ package filters
 
 import (
 	"context"
-	"encoding/json"
 	"errors"
 	"fmt"
+	json "github.com/json-iterator/go"
 	"math/big"
 	"sync"
 	"time"

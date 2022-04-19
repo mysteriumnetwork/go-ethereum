@@ -18,8 +18,8 @@ package vm
 
 import (
 	"bytes"
-	"encoding/json"
 	"fmt"
+	json "github.com/json-iterator/go"
 	"io/ioutil"
 	"math/big"
 	"testing"

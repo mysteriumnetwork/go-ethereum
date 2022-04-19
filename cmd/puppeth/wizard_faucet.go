@@ -17,8 +17,8 @@
 package main
 
 import (
-	"encoding/json"
 	"fmt"
+	json "github.com/json-iterator/go"
 
 	"github.com/ethereum/go-ethereum/accounts/keystore"
 	"github.com/ethereum/go-ethereum/log"

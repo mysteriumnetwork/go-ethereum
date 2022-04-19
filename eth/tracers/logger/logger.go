@@ -18,8 +18,8 @@ package logger
 
 import (
 	"encoding/hex"
-	"encoding/json"
 	"fmt"
+	json "github.com/json-iterator/go"
 	"io"
 	"math/big"
 	"strings"

@@ -17,8 +17,9 @@
 package common
 
 import (
-	"encoding/json"
+	jsonstd "encoding/json"
 	"fmt"
+	json "github.com/json-iterator/go"
 	"io/ioutil"
 )
 
@@ -29,7 +30,7 @@ func LoadJSON(file string, val interface{}) error {
 		return err
 	}
 	if err := json.Unmarshal(content, val); err != nil {
-		if syntaxerr, ok := err.(*json.SyntaxError); ok {
+		if syntaxerr, ok := err.(*jsonstd.SyntaxError); ok {
 			line := findLine(content, syntaxerr.Offset)
 			return fmt.Errorf("JSON syntax error at %v:%v: %v", file, line, err)
 		}

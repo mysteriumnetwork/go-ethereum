@@ -17,8 +17,8 @@
 package types
 
 import (
-	"encoding/json"
 	"errors"
+	json "github.com/json-iterator/go"
 	"math/big"
 
 	"github.com/ethereum/go-ethereum/common"

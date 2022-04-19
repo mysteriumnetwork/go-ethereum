@@ -20,8 +20,8 @@
 package geth
 
 import (
-	"encoding/json"
 	"fmt"
+	json "github.com/json-iterator/go"
 	"path/filepath"
 
 	"github.com/ethereum/go-ethereum/core"

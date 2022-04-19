@@ -19,8 +19,8 @@ package core_test
 import (
 	"bytes"
 	"context"
-	"encoding/json"
 	"fmt"
+	json "github.com/json-iterator/go"
 	"io/ioutil"
 	"path"
 	"strings"

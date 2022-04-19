@@ -17,8 +17,8 @@
 package tests
 
 import (
-	"encoding/json"
 	"fmt"
+	json "github.com/json-iterator/go"
 	"io"
 	"io/ioutil"
 	"os"
@@ -30,6 +30,7 @@ import (
 	"strings"
 	"testing"
 
+	jsonstd "encoding/json"
 	"github.com/ethereum/go-ethereum/params"
 )
 
@@ -50,7 +51,7 @@ func readJSON(reader io.Reader, value interface{}) error {
 		return fmt.Errorf("error reading JSON file: %v", err)
 	}
 	if err = json.Unmarshal(data, &value); err != nil {
-		if syntaxerr, ok := err.(*json.SyntaxError); ok {
+		if syntaxerr, ok := err.(*jsonstd.SyntaxError); ok {
 			line := findLine(data, syntaxerr.Offset)
 			return fmt.Errorf("JSON syntax error at line %v: %v", line, err)
 		}

@@ -17,7 +17,7 @@
 package rpc
 
 import (
-	"encoding/json"
+	json "github.com/json-iterator/go"
 	"reflect"
 	"testing"
 

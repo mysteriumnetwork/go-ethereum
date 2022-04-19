@@ -18,8 +18,8 @@ package storage
 
 import (
 	"bytes"
-	"encoding/json"
 	"fmt"
+	json "github.com/json-iterator/go"
 	"io/ioutil"
 	"testing"
 

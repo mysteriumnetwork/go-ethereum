@@ -19,9 +19,9 @@ package ethclient
 
 import (
 	"context"
-	"encoding/json"
 	"errors"
 	"fmt"
+	json "github.com/json-iterator/go"
 	"math/big"
 
 	"github.com/ethereum/go-ethereum"

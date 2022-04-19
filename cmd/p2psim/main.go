@@ -38,8 +38,8 @@ package main
 
 import (
 	"context"
-	"encoding/json"
 	"fmt"
+	json "github.com/json-iterator/go"
 	"io"
 	"os"
 	"strings"

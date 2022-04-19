@@ -18,9 +18,9 @@ package core
 
 import (
 	"context"
-	"encoding/json"
 	"errors"
 	"fmt"
+	json "github.com/json-iterator/go"
 	"math/big"
 	"os"
 	"reflect"

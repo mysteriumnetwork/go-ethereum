@@ -19,9 +19,9 @@ package adapters
 import (
 	"bytes"
 	"context"
-	"encoding/json"
 	"errors"
 	"fmt"
+	json "github.com/json-iterator/go"
 	"io"
 	"net"
 	"net/http"

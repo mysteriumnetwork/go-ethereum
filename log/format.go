@@ -2,8 +2,8 @@ package log
 
 import (
 	"bytes"
-	"encoding/json"
 	"fmt"
+	json "github.com/json-iterator/go"
 	"math/big"
 	"reflect"
 	"strconv"

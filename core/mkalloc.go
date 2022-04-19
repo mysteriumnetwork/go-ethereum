@@ -28,8 +28,8 @@
 package main
 
 import (
-	"encoding/json"
 	"fmt"
+	json "github.com/json-iterator/go"
 	"math/big"
 	"os"
 	"sort"

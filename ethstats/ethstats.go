@@ -19,9 +19,9 @@ package ethstats
 
 import (
 	"context"
-	"encoding/json"
 	"errors"
 	"fmt"
+	json "github.com/json-iterator/go"
 	"math/big"
 	"net/http"
 	"runtime"

@@ -18,9 +18,9 @@ package t8ntool
 
 import (
 	"crypto/ecdsa"
-	"encoding/json"
 	"errors"
 	"fmt"
+	json "github.com/json-iterator/go"
 	"io/ioutil"
 	"math/big"
 	"os"

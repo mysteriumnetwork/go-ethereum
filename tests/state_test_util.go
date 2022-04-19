@@ -18,8 +18,8 @@ package tests
 
 import (
 	"encoding/hex"
-	"encoding/json"
 	"fmt"
+	json "github.com/json-iterator/go"
 	"math/big"
 	"strconv"
 	"strings"

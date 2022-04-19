@@ -17,8 +17,8 @@
 package console
 
 import (
-	"encoding/json"
 	"fmt"
+	json "github.com/json-iterator/go"
 	"io"
 	"reflect"
 	"strings"

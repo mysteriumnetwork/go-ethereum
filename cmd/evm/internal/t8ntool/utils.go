@@ -17,8 +17,8 @@
 package t8ntool
 
 import (
-	"encoding/json"
 	"fmt"
+	json "github.com/json-iterator/go"
 	"os"
 
 	"gopkg.in/urfave/cli.v1"

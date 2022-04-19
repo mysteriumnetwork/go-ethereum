@@ -17,8 +17,8 @@
 package native
 
 import (
-	"encoding/json"
 	"errors"
+	json "github.com/json-iterator/go"
 	"math/big"
 	"strconv"
 	"strings"

@@ -18,7 +18,7 @@ package hexutil
 
 import (
 	"encoding/hex"
-	"encoding/json"
+	jsonstd "encoding/json"
 	"fmt"
 	"math/big"
 	"reflect"
@@ -366,11 +366,11 @@ func checkNumberText(input []byte) (raw []byte, err error) {
 
 func wrapTypeError(err error, typ reflect.Type) error {
 	if _, ok := err.(*decError); ok {
-		return &json.UnmarshalTypeError{Value: err.Error(), Type: typ}
+		return &jsonstd.UnmarshalTypeError{Value: err.Error(), Type: typ}
 	}
 	return err
 }
 
 func errNonString(typ reflect.Type) error {
-	return &json.UnmarshalTypeError{Value: "non-string", Type: typ}
+	return &jsonstd.UnmarshalTypeError{Value: "non-string", Type: typ}
 }

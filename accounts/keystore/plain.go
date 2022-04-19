@@ -17,8 +17,8 @@
 package keystore
 
 import (
-	"encoding/json"
 	"fmt"
+	json "github.com/json-iterator/go"
 	"os"
 	"path/filepath"
 

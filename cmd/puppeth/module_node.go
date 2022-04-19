@@ -18,8 +18,8 @@ package main
 
 import (
 	"bytes"
-	"encoding/json"
 	"fmt"
+	json "github.com/json-iterator/go"
 	"math/rand"
 	"path/filepath"
 	"strconv"

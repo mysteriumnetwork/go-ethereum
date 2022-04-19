@@ -17,9 +17,9 @@
 package main
 
 import (
-	"encoding/json"
 	"errors"
 	"fmt"
+	json "github.com/json-iterator/go"
 	"os"
 	"runtime"
 	"strconv"

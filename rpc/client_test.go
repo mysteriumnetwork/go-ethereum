@@ -18,8 +18,8 @@ package rpc
 
 import (
 	"context"
-	"encoding/json"
 	"fmt"
+	json "github.com/json-iterator/go"
 	"math/rand"
 	"net"
 	"net/http"

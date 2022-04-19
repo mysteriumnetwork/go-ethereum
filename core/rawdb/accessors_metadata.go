@@ -17,7 +17,7 @@
 package rawdb
 
 import (
-	"encoding/json"
+	json "github.com/json-iterator/go"
 	"time"
 
 	"github.com/ethereum/go-ethereum/common"

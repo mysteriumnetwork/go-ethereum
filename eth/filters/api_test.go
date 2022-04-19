@@ -17,8 +17,8 @@
 package filters
 
 import (
-	"encoding/json"
 	"fmt"
+	json "github.com/json-iterator/go"
 	"testing"
 
 	"github.com/ethereum/go-ethereum/common"

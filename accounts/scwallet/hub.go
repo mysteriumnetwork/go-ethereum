@@ -33,7 +33,7 @@
 package scwallet
 
 import (
-	"encoding/json"
+	json "github.com/json-iterator/go"
 	"io/ioutil"
 	"os"
 	"path/filepath"

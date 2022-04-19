@@ -19,8 +19,8 @@ package hexutil
 import (
 	"bytes"
 	"encoding/hex"
-	"encoding/json"
 	"errors"
+	json "github.com/json-iterator/go"
 	"math/big"
 	"testing"
 )

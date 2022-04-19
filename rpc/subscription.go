@@ -22,8 +22,9 @@ import (
 	crand "crypto/rand"
 	"encoding/binary"
 	"encoding/hex"
-	"encoding/json"
+	jsonstd "encoding/json"
 	"errors"
+	json "github.com/json-iterator/go"
 	"math/rand"
 	"reflect"
 	"strings"
@@ -96,7 +97,7 @@ type Notifier struct {
 
 	mu           sync.Mutex
 	sub          *Subscription
-	buffer       []json.RawMessage
+	buffer       []jsonstd.RawMessage
 	callReturned bool
 	activated    bool
 }
@@ -172,7 +173,7 @@ func (n *Notifier) activate() error {
 	return nil
 }
 
-func (n *Notifier) send(sub *Subscription, data json.RawMessage) error {
+func (n *Notifier) send(sub *Subscription, data jsonstd.RawMessage) error {
 	params, _ := json.Marshal(&subscriptionResult{ID: string(sub.ID), Result: data})
 	ctx := context.Background()
 	return n.h.conn.writeJSON(ctx, &jsonrpcMessage{
@@ -210,7 +211,7 @@ type ClientSubscription struct {
 	subid     string
 
 	// The in channel receives notification values from client dispatcher.
-	in chan json.RawMessage
+	in chan jsonstd.RawMessage
 
 	// The error channel receives the error from the forwarding loop.
 	// It is closed by Unsubscribe.
@@ -234,7 +235,7 @@ func newClientSubscription(c *Client, namespace string, channel reflect.Value) *
 		namespace:   namespace,
 		etype:       channel.Type().Elem(),
 		channel:     channel,
-		in:          make(chan json.RawMessage),
+		in:          make(chan jsonstd.RawMessage),
 		quit:        make(chan error),
 		forwardDone: make(chan struct{}),
 		unsubDone:   make(chan struct{}),
@@ -269,7 +270,7 @@ func (sub *ClientSubscription) Unsubscribe() {
 }
 
 // deliver is called by the client's message dispatcher to send a notification value.
-func (sub *ClientSubscription) deliver(result json.RawMessage) (ok bool) {
+func (sub *ClientSubscription) deliver(result jsonstd.RawMessage) (ok bool) {
 	select {
 	case sub.in <- result:
 		return true
@@ -347,7 +348,7 @@ func (sub *ClientSubscription) forward() (unsubscribeServer bool, err error) {
 			return false, err
 
 		case 1: // <-sub.in
-			val, err := sub.unmarshal(recv.Interface().(json.RawMessage))
+			val, err := sub.unmarshal(recv.Interface().(jsonstd.RawMessage))
 			if err != nil {
 				return true, err
 			}
@@ -363,7 +364,7 @@ func (sub *ClientSubscription) forward() (unsubscribeServer bool, err error) {
 	}
 }
 
-func (sub *ClientSubscription) unmarshal(result json.RawMessage) (interface{}, error) {
+func (sub *ClientSubscription) unmarshal(result jsonstd.RawMessage) (interface{}, error) {
 	val := reflect.New(sub.etype)
 	err := json.Unmarshal(result, val.Interface())
 	return val.Elem().Interface(), err
