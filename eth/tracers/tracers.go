@@ -18,8 +18,8 @@
 package tracers
 
 import (
-	"encoding/json"
 	"errors"
+	stdjson "encoding/json"
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core/vm"
@@ -37,7 +37,7 @@ type Context struct {
 // allows collecting the tracing result.
 type Tracer interface {
 	vm.EVMLogger
-	GetResult() (json.RawMessage, error)
+	GetResult() (stdjson.RawMessage, error)
 	// Stop terminates execution of the tracer at the first opportune moment.
 	Stop(err error)
 }

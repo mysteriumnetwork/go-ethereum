@@ -17,11 +17,11 @@
 package rpc
 
 import (
-	"bytes"
 	"context"
-	"encoding/json"
+	stdjson "encoding/json"
 	"errors"
 	"fmt"
+	json "github.com/json-iterator/go"
 	"io"
 	"reflect"
 	"strings"
@@ -39,22 +39,22 @@ const (
 	defaultWriteTimeout = 10 * time.Second // used if context has no deadline
 )
 
-var null = json.RawMessage("null")
+var null = stdjson.RawMessage("null")
 
 type subscriptionResult struct {
-	ID     string          `json:"subscription"`
-	Result json.RawMessage `json:"result,omitempty"`
+	ID     string             `json:"subscription"`
+	Result stdjson.RawMessage `json:"result,omitempty"`
 }
 
 // A value of this type can a JSON-RPC request, notification, successful response or
 // error response. Which one it is depends on the fields.
 type jsonrpcMessage struct {
-	Version string          `json:"jsonrpc,omitempty"`
-	ID      json.RawMessage `json:"id,omitempty"`
-	Method  string          `json:"method,omitempty"`
-	Params  json.RawMessage `json:"params,omitempty"`
-	Error   *jsonError      `json:"error,omitempty"`
-	Result  json.RawMessage `json:"result,omitempty"`
+	Version string             `json:"jsonrpc,omitempty"`
+	ID      stdjson.RawMessage `json:"id,omitempty"`
+	Method  string             `json:"method,omitempty"`
+	Params  stdjson.RawMessage `json:"params,omitempty"`
+	Error   *jsonError         `json:"error,omitempty"`
+	Result  stdjson.RawMessage `json:"result,omitempty"`
 }
 
 func (msg *jsonrpcMessage) isNotification() bool {
@@ -210,7 +210,7 @@ func (c *jsonCodec) remoteAddr() string {
 func (c *jsonCodec) readBatch() (messages []*jsonrpcMessage, batch bool, err error) {
 	// Decode the next JSON object in the input stream.
 	// This verifies basic syntax, etc.
-	var rawmsg json.RawMessage
+	var rawmsg stdjson.RawMessage
 	if err := c.decode(&rawmsg); err != nil {
 		return nil, false, err
 	}
@@ -253,56 +253,58 @@ func (c *jsonCodec) closed() <-chan interface{} {
 // checks in this function because the raw message has already been syntax-checked when it
 // is called. Any non-JSON-RPC messages in the input return the zero value of
 // jsonrpcMessage.
-func parseMessage(raw json.RawMessage) ([]*jsonrpcMessage, bool) {
-	if !isBatch(raw) {
-		msgs := []*jsonrpcMessage{{}}
-		json.Unmarshal(raw, &msgs[0])
+func parseMessage(raw stdjson.RawMessage) ([]*jsonrpcMessage, bool) {
+	var msgs []*jsonrpcMessage
+	dec := json.ParseBytes(json.ConfigDefault, raw)
+	switch dec.WhatIsNext() {
+	case json.ObjectValue:
+		msgs = []*jsonrpcMessage{{}}
+		dec.ReadVal(&msgs[0])
+		return msgs, false
+	case json.ArrayValue:
+		for i := 0; dec.ReadArray(); i++ {
+			msgs = append(msgs, new(jsonrpcMessage))
+			var tmp stdjson.RawMessage
+			dec.ReadVal(&tmp)
+			_ = json.Unmarshal(tmp, &msgs[i])
+		}
+		return msgs, true
+	default:
+		msgs = []*jsonrpcMessage{{}}
 		return msgs, false
 	}
-	dec := json.NewDecoder(bytes.NewReader(raw))
-	dec.Token() // skip '['
-	var msgs []*jsonrpcMessage
-	for dec.More() {
-		msgs = append(msgs, new(jsonrpcMessage))
-		dec.Decode(&msgs[len(msgs)-1])
-	}
-	return msgs, true
-}
-
-// isBatch returns true when the first non-whitespace characters is '['
-func isBatch(raw json.RawMessage) bool {
-	for _, c := range raw {
-		// skip insignificant whitespace (http://www.ietf.org/rfc/rfc4627.txt)
-		if c == 0x20 || c == 0x09 || c == 0x0a || c == 0x0d {
-			continue
-		}
-		return c == '['
-	}
-	return false
 }
 
 // parsePositionalArguments tries to parse the given args to an array of values with the
 // given types. It returns the parsed values or an error when the args could not be
 // parsed. Missing optional arguments are returned as reflect.Zero values.
-func parsePositionalArguments(rawArgs json.RawMessage, types []reflect.Type) ([]reflect.Value, error) {
-	dec := json.NewDecoder(bytes.NewReader(rawArgs))
-	var args []reflect.Value
-	tok, err := dec.Token()
-	switch {
-	case err == io.EOF || tok == nil && err == nil:
-		// "params" is optional and may be empty. Also allow "params":null even though it's
-		// not in the spec because our own client used to send it.
-	case err != nil:
-		return nil, err
-	case tok == json.Delim('['):
-		// Read argument array.
-		if args, err = parseArgumentArray(dec, types); err != nil {
-			return nil, err
+func parsePositionalArguments(rawArgs stdjson.RawMessage, types []reflect.Type) ([]reflect.Value, error) {
+	dec := json.ParseBytes(json.ConfigDefault, rawArgs)
+	args := make([]reflect.Value, 0, len(types))
+	switch dec.WhatIsNext() {
+	case json.NilValue:
+	case json.ArrayValue:
+		for i := 0; dec.ReadArray(); i++ {
+			if i >= len(types) {
+				return args, fmt.Errorf("too many arguments, want at most %d", len(types))
+			}
+			argval := reflect.New(types[i])
+			dec.ReadVal(argval.Interface())
+			if dec.Error != nil {
+				return args, fmt.Errorf("invalid argument %d: %v", i, dec.Error)
+			}
+			if argval.IsNil() && types[i].Kind() != reflect.Ptr {
+				return args, fmt.Errorf("missing value for required argument %d", i)
+			}
+			args = append(args, argval.Elem())
+		}
+	case json.InvalidValue:
+		if dec.Error != io.EOF {
+			return nil, errors.New("non-array args")
 		}
 	default:
 		return nil, errors.New("non-array args")
 	}
-	// Set any missing args to nil.
 	for i := len(args); i < len(types); i++ {
 		if types[i].Kind() != reflect.Ptr {
 			return nil, fmt.Errorf("missing value for required argument %d", i)
@@ -312,35 +314,17 @@ func parsePositionalArguments(rawArgs json.RawMessage, types []reflect.Type) ([]
 	return args, nil
 }
 
-func parseArgumentArray(dec *json.Decoder, types []reflect.Type) ([]reflect.Value, error) {
-	args := make([]reflect.Value, 0, len(types))
-	for i := 0; dec.More(); i++ {
-		if i >= len(types) {
-			return args, fmt.Errorf("too many arguments, want at most %d", len(types))
-		}
-		argval := reflect.New(types[i])
-		if err := dec.Decode(argval.Interface()); err != nil {
-			return args, fmt.Errorf("invalid argument %d: %v", i, err)
-		}
-		if argval.IsNil() && types[i].Kind() != reflect.Ptr {
-			return args, fmt.Errorf("missing value for required argument %d", i)
-		}
-		args = append(args, argval.Elem())
-	}
-	// Read end of args array.
-	_, err := dec.Token()
-	return args, err
-}
-
 // parseSubscriptionName extracts the subscription name from an encoded argument array.
-func parseSubscriptionName(rawArgs json.RawMessage) (string, error) {
-	dec := json.NewDecoder(bytes.NewReader(rawArgs))
-	if tok, _ := dec.Token(); tok != json.Delim('[') {
+func parseSubscriptionName(rawArgs stdjson.RawMessage) (string, error) {
+	dec := json.ParseBytes(json.ConfigDefault, rawArgs)
+	if !dec.ReadArray() {
 		return "", errors.New("non-array args")
 	}
-	v, _ := dec.Token()
-	method, ok := v.(string)
-	if !ok {
+	if dec.Error != nil {
+		return "", dec.Error
+	}
+	method := dec.ReadString()
+	if dec.Error != nil {
 		return "", errors.New("expected subscription name as first argument")
 	}
 	return method, nil

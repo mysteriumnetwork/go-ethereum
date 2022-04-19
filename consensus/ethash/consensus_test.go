@@ -18,7 +18,7 @@ package ethash
 
 import (
 	"encoding/binary"
-	"encoding/json"
+	json "github.com/json-iterator/go"
 	"math/big"
 	"math/rand"
 	"os"

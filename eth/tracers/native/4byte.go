@@ -17,8 +17,9 @@
 package native
 
 import (
-	"encoding/json"
+	json "github.com/json-iterator/go"
 	"math/big"
+	stdjson "encoding/json"
 	"strconv"
 	"sync/atomic"
 	"time"
@@ -137,7 +138,7 @@ func (*fourByteTracer) CaptureTxEnd(restGas uint64) {}
 
 // GetResult returns the json-encoded nested list of call traces, and any
 // error arising from the encoding or forceful termination (via `Stop`).
-func (t *fourByteTracer) GetResult() (json.RawMessage, error) {
+func (t *fourByteTracer) GetResult() (stdjson.RawMessage, error) {
 	res, err := json.Marshal(t.ids)
 	if err != nil {
 		return nil, err

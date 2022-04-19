@@ -19,7 +19,7 @@ package hexutil
 import (
 	"bytes"
 	"encoding/hex"
-	"encoding/json"
+	json "github.com/json-iterator/go"
 	"errors"
 	"math/big"
 	"testing"

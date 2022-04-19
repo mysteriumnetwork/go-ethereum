@@ -20,7 +20,7 @@ import (
 	"bytes"
 	"database/sql/driver"
 	"encoding/hex"
-	"encoding/json"
+	json "github.com/json-iterator/go"
 	"errors"
 	"fmt"
 	"math/big"

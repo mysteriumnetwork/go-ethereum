@@ -18,7 +18,7 @@ package main
 
 import (
 	"crypto/ecdsa"
-	"encoding/json"
+	json "github.com/json-iterator/go"
 	"fmt"
 	"io/ioutil"
 	"os"

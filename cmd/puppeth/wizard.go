@@ -17,7 +17,7 @@
 package main
 
 import (
-	"encoding/json"
+	json "github.com/json-iterator/go"
 	"fmt"
 	"io/ioutil"
 	"math/big"
@@ -26,6 +26,7 @@ import (
 	"os"
 	"path/filepath"
 	"sort"
+	stdjson "encoding/json"
 	"strconv"
 	"strings"
 	"sync"
@@ -278,7 +279,7 @@ func (w *wizard) readDefaultAddress(def common.Address) common.Address {
 
 // readJSON reads a raw JSON message and returns it.
 func (w *wizard) readJSON() string {
-	var blob json.RawMessage
+	var blob stdjson.RawMessage
 
 	for {
 		text := promptInput("> ")

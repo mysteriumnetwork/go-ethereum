@@ -17,9 +17,10 @@
 package native
 
 import (
-	"encoding/json"
+	json "github.com/json-iterator/go"
 	"errors"
 	"math/big"
+	stdjson "encoding/json"
 	"strconv"
 	"strings"
 	"sync/atomic"
@@ -148,7 +149,7 @@ func (*callTracer) CaptureTxEnd(restGas uint64) {}
 
 // GetResult returns the json-encoded nested list of call traces, and any
 // error arising from the encoding or forceful termination (via `Stop`).
-func (t *callTracer) GetResult() (json.RawMessage, error) {
+func (t *callTracer) GetResult() (stdjson.RawMessage, error) {
 	if len(t.callstack) != 1 {
 		return nil, errors.New("incorrect number of top-level calls")
 	}
@@ -156,7 +157,7 @@ func (t *callTracer) GetResult() (json.RawMessage, error) {
 	if err != nil {
 		return nil, err
 	}
-	return json.RawMessage(res), t.reason
+	return stdjson.RawMessage(res), t.reason
 }
 
 // Stop terminates execution of the tracer at the first opportune moment.

@@ -19,12 +19,13 @@ package ethstats
 
 import (
 	"context"
-	"encoding/json"
+	json "github.com/json-iterator/go"
 	"errors"
 	"fmt"
 	"math/big"
 	"net/http"
 	"runtime"
+	stdjson "encoding/json"
 	"strconv"
 	"strings"
 	"sync"
@@ -358,7 +359,7 @@ func (s *Service) readLoop(conn *connWrapper) {
 
 	for {
 		// Retrieve the next generic network packet and bail out on error
-		var blob json.RawMessage
+		var blob stdjson.RawMessage
 		if err := conn.ReadJSON(&blob); err != nil {
 			log.Warn("Failed to retrieve stats server message", "err", err)
 			return

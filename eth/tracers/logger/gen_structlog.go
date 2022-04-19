@@ -3,7 +3,7 @@
 package logger
 
 import (
-	"encoding/json"
+	json "github.com/json-iterator/go"
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/hexutil"

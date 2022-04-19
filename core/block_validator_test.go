@@ -17,7 +17,7 @@
 package core
 
 import (
-	"encoding/json"
+	json "github.com/json-iterator/go"
 	"math/big"
 	"runtime"
 	"testing"

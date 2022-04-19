@@ -17,7 +17,7 @@
 package filters
 
 import (
-	"encoding/json"
+	json "github.com/json-iterator/go"
 	"fmt"
 	"testing"
 

@@ -19,7 +19,7 @@
 package geth
 
 import (
-	"encoding/json"
+	json "github.com/json-iterator/go"
 
 	"github.com/ethereum/go-ethereum/core"
 	"github.com/ethereum/go-ethereum/p2p/enode"

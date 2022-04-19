@@ -20,7 +20,7 @@ package tests
 import (
 	"bytes"
 	"encoding/hex"
-	"encoding/json"
+	json "github.com/json-iterator/go"
 	"fmt"
 	"math/big"
 	"os"

@@ -18,7 +18,7 @@ package apitypes
 
 import (
 	"bytes"
-	"encoding/json"
+	json "github.com/json-iterator/go"
 	"errors"
 	"fmt"
 	"math/big"

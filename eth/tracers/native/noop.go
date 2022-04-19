@@ -17,8 +17,8 @@
 package native
 
 import (
-	"encoding/json"
 	"math/big"
+	stdjson "encoding/json"
 	"time"
 
 	"github.com/ethereum/go-ethereum/common"
@@ -69,8 +69,8 @@ func (*noopTracer) CaptureTxStart(gasLimit uint64) {}
 func (*noopTracer) CaptureTxEnd(restGas uint64) {}
 
 // GetResult returns an empty json object.
-func (t *noopTracer) GetResult() (json.RawMessage, error) {
-	return json.RawMessage(`{}`), nil
+func (t *noopTracer) GetResult() (stdjson.RawMessage, error) {
+	return stdjson.RawMessage(`{}`), nil
 }
 
 // Stop terminates execution of the tracer at the first opportune moment.

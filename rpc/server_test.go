@@ -18,11 +18,12 @@ package rpc
 
 import (
 	"bufio"
-	"bytes"
 	"io"
 	"io/ioutil"
+	json "github.com/json-iterator/go"
 	"net"
 	"path/filepath"
+	"reflect"
 	"strings"
 	"testing"
 	"time"
@@ -147,8 +148,17 @@ func TestServerShortLivedConn(t *testing.T) {
 		if err != nil {
 			t.Fatal("read error:", err)
 		}
-		if !bytes.Equal(buf[:n], []byte(wantResp)) {
-			t.Fatalf("wrong response: %s", buf[:n])
+		gotResp := buf[:n]
+		var want interface{}
+		var got interface{}
+		if err := json.Unmarshal([]byte(wantResp), &want); err != nil {
+			t.Fatal("unmarshal error:", err)
+		}
+		if err := json.Unmarshal(gotResp, &got); err != nil {
+			t.Fatal("unmarshal error:", err)
+		}
+		if !reflect.DeepEqual(want, got) {
+			t.Fatalf("wrong response: %s", gotResp)
 		}
 	}
 }

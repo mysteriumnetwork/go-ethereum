@@ -18,8 +18,9 @@ package rpc
 
 import (
 	"context"
-	"encoding/json"
+	json "github.com/json-iterator/go"
 	"reflect"
+	stdjson "encoding/json"
 	"strconv"
 	"strings"
 	"sync"
@@ -407,7 +408,7 @@ func (h *handler) unsubscribe(ctx context.Context, id ID) (bool, error) {
 	return true, nil
 }
 
-type idForLog struct{ json.RawMessage }
+type idForLog struct{ stdjson.RawMessage }
 
 func (id idForLog) String() string {
 	if s, err := strconv.Unquote(string(id.RawMessage)); err == nil {

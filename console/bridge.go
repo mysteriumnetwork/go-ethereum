@@ -17,10 +17,11 @@
 package console
 
 import (
-	"encoding/json"
+	json "github.com/json-iterator/go"
 	"fmt"
 	"io"
 	"reflect"
+	stdjson "encoding/json"
 	"strings"
 	"time"
 
@@ -411,7 +412,7 @@ func (b *bridge) Send(call jsre.Call) (goja.Value, error) {
 		resp.Set("jsonrpc", "2.0")
 		resp.Set("id", req.ID)
 
-		var result json.RawMessage
+		var result stdjson.RawMessage
 		if err = b.client.Call(&result, req.Method, req.Params...); err == nil {
 			if result == nil {
 				// Special case null because it is decoded as an empty

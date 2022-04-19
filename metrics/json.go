@@ -1,7 +1,7 @@
 package metrics
 
 import (
-	"encoding/json"
+	json "github.com/json-iterator/go"
 	"io"
 	"time"
 )

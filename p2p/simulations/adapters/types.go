@@ -19,7 +19,7 @@ package adapters
 import (
 	"crypto/ecdsa"
 	"encoding/hex"
-	"encoding/json"
+	json "github.com/json-iterator/go"
 	"fmt"
 	"net"
 	"os"

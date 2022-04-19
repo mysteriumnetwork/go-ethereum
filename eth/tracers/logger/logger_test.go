@@ -17,7 +17,7 @@
 package logger
 
 import (
-	"encoding/json"
+	json "github.com/json-iterator/go"
 	"fmt"
 	"math/big"
 	"testing"
