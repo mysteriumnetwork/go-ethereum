@@ -26,7 +26,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/mysteriumnetwork/go-ethereum/params"
+	"github.com/ethereum/go-ethereum/params"
 )
 
 const (

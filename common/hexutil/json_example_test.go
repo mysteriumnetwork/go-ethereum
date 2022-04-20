@@ -20,7 +20,7 @@ import (
 	json "github.com/json-iterator/go"
 	"fmt"
 
-	"github.com/mysteriumnetwork/go-ethereum/common/hexutil"
+	"github.com/ethereum/go-ethereum/common/hexutil"
 )
 
 type MyType [5]byte
