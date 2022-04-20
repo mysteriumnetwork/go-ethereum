@@ -23,7 +23,7 @@ package fourbyte
 
 import (
 	"encoding/hex"
-	"encoding/json"
+	json "github.com/json-iterator/go"
 	"fmt"
 	"io/ioutil"
 	"os"

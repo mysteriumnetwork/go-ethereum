@@ -20,7 +20,7 @@ import (
 	"crypto/aes"
 	"crypto/cipher"
 	"crypto/rand"
-	"encoding/json"
+	json "github.com/json-iterator/go"
 	"io"
 	"io/ioutil"
 	"os"

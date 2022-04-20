@@ -17,7 +17,7 @@
 package rules
 
 import (
-	"encoding/json"
+	json "github.com/json-iterator/go"
 	"fmt"
 	"os"
 	"strings"

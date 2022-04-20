@@ -19,7 +19,7 @@ package abi
 import (
 	"bytes"
 	"encoding/hex"
-	"encoding/json"
+	json "github.com/json-iterator/go"
 	"math/big"
 	"reflect"
 	"strings"

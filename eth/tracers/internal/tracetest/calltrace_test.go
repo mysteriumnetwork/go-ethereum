@@ -17,7 +17,7 @@
 package tracetest
 
 import (
-	"encoding/json"
+	json "github.com/json-iterator/go"
 	"io/ioutil"
 	"math/big"
 	"path/filepath"

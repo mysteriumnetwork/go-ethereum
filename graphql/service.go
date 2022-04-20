@@ -17,7 +17,7 @@
 package graphql
 
 import (
-	"encoding/json"
+	json "github.com/json-iterator/go"
 	"net/http"
 
 	"github.com/ethereum/go-ethereum/internal/ethapi"

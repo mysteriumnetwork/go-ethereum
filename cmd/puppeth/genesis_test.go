@@ -18,7 +18,7 @@ package main
 
 import (
 	"bytes"
-	"encoding/json"
+	json "github.com/json-iterator/go"
 	"io/ioutil"
 	"reflect"
 	"strings"

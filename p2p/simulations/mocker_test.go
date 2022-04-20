@@ -19,7 +19,7 @@
 package simulations
 
 import (
-	"encoding/json"
+	json "github.com/json-iterator/go"
 	"net/http"
 	"net/url"
 	"strconv"

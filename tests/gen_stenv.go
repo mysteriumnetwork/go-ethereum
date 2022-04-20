@@ -3,7 +3,7 @@
 package tests
 
 import (
-	"encoding/json"
+	json "github.com/json-iterator/go"
 	"errors"
 	"math/big"
 

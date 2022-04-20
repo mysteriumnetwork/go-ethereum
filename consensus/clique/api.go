@@ -17,7 +17,7 @@
 package clique
 
 import (
-	"encoding/json"
+	json "github.com/json-iterator/go"
 	"fmt"
 
 	"github.com/ethereum/go-ethereum/common"

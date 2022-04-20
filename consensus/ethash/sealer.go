@@ -20,7 +20,7 @@ import (
 	"bytes"
 	"context"
 	crand "crypto/rand"
-	"encoding/json"
+	json "github.com/json-iterator/go"
 	"errors"
 	"math"
 	"math/big"

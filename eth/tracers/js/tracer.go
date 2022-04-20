@@ -18,10 +18,10 @@
 package js
 
 import (
-	"encoding/json"
 	"errors"
 	"fmt"
 	"math/big"
+	stdjson "encoding/json"
 	"strings"
 	"sync/atomic"
 	"time"
@@ -644,7 +644,7 @@ func (jst *jsTracer) Stop(err error) {
 
 // call executes a method on a JS object, catching any errors, formatting and
 // returning them as error objects.
-func (jst *jsTracer) call(noret bool, method string, args ...string) (json.RawMessage, error) {
+func (jst *jsTracer) call(noret bool, method string, args ...string) (stdjson.RawMessage, error) {
 	// Execute the JavaScript call and return any error
 	jst.vm.PushString(method)
 	for _, arg := range args {
@@ -672,7 +672,7 @@ func (jst *jsTracer) call(noret bool, method string, args ...string) (json.RawMe
 		err := jst.vm.SafeToString(-1)
 		return nil, errors.New(err)
 	}
-	return json.RawMessage(jst.vm.SafeToString(-1)), nil
+	return stdjson.RawMessage(jst.vm.SafeToString(-1)), nil
 }
 
 func wrapError(context string, err error) error {
@@ -831,7 +831,7 @@ func (jst *jsTracer) CaptureExit(output []byte, gasUsed uint64, err error) {
 }
 
 // GetResult calls the Javascript 'result' function and returns its value, or any accumulated error
-func (jst *jsTracer) GetResult() (json.RawMessage, error) {
+func (jst *jsTracer) GetResult() (stdjson.RawMessage, error) {
 	// Transform the context into a JavaScript object and inject into the state
 	obj := jst.vm.PushObject()
 

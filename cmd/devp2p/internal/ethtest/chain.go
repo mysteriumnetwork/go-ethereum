@@ -18,7 +18,7 @@ package ethtest
 
 import (
 	"compress/gzip"
-	"encoding/json"
+	json "github.com/json-iterator/go"
 	"fmt"
 	"io"
 	"io/ioutil"

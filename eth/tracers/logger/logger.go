@@ -18,10 +18,11 @@ package logger
 
 import (
 	"encoding/hex"
-	"encoding/json"
+	json "github.com/json-iterator/go"
 	"fmt"
 	"io"
 	"math/big"
+	stdjson "encoding/json"
 	"strings"
 	"sync/atomic"
 	"time"
@@ -237,7 +238,7 @@ func (l *StructLogger) CaptureEnter(typ vm.OpCode, from common.Address, to commo
 func (l *StructLogger) CaptureExit(output []byte, gasUsed uint64, err error) {
 }
 
-func (l *StructLogger) GetResult() (json.RawMessage, error) {
+func (l *StructLogger) GetResult() (stdjson.RawMessage, error) {
 	// Tracing aborted
 	if l.reason != nil {
 		return nil, l.reason

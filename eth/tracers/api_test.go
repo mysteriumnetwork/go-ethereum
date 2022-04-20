@@ -20,11 +20,12 @@ import (
 	"bytes"
 	"context"
 	"crypto/ecdsa"
-	"encoding/json"
+	json "github.com/json-iterator/go"
 	"errors"
 	"fmt"
 	"math/big"
 	"reflect"
+	stdjson "encoding/json"
 	"sort"
 	"testing"
 	"time"
@@ -301,7 +302,7 @@ func TestTraceCall(t *testing.T) {
 				continue
 			}
 			var have *logger.ExecutionResult
-			if err := json.Unmarshal(result.(json.RawMessage), &have); err != nil {
+			if err := json.Unmarshal(result.(stdjson.RawMessage), &have); err != nil {
 				t.Errorf("failed to unmarshal result %v", err)
 			}
 			if !reflect.DeepEqual(have, testspec.expect) {
@@ -335,7 +336,7 @@ func TestTraceTransaction(t *testing.T) {
 		t.Errorf("Failed to trace transaction %v", err)
 	}
 	var have *logger.ExecutionResult
-	if err := json.Unmarshal(result.(json.RawMessage), &have); err != nil {
+	if err := json.Unmarshal(result.(stdjson.RawMessage), &have); err != nil {
 		t.Errorf("failed to unmarshal result %v", err)
 	}
 	if !reflect.DeepEqual(have, &logger.ExecutionResult{

@@ -17,7 +17,7 @@
 package main
 
 import (
-	"encoding/json"
+	json "github.com/json-iterator/go"
 	"errors"
 	"fmt"
 	"io/ioutil"

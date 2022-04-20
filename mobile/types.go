@@ -19,7 +19,7 @@
 package geth
 
 import (
-	"encoding/json"
+	json "github.com/json-iterator/go"
 	"errors"
 	"fmt"
 

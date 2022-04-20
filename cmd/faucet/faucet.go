@@ -23,7 +23,7 @@ package main
 import (
 	"bytes"
 	"context"
-	"encoding/json"
+	json "github.com/json-iterator/go"
 	"errors"
 	"flag"
 	"fmt"
@@ -36,6 +36,7 @@ import (
 	"os"
 	"path/filepath"
 	"regexp"
+	stdjson "encoding/json"
 	"strconv"
 	"strings"
 	"sync"
@@ -430,7 +431,7 @@ func (f *faucet) apiHandler(w http.ResponseWriter, r *http.Request) {
 			}
 			var result struct {
 				Success bool            `json:"success"`
-				Errors  json.RawMessage `json:"error-codes"`
+				Errors  stdjson.RawMessage `json:"error-codes"`
 			}
 			err = json.NewDecoder(res.Body).Decode(&result)
 			res.Body.Close()

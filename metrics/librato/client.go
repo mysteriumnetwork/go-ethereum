@@ -2,7 +2,7 @@ package librato
 
 import (
 	"bytes"
-	"encoding/json"
+	json "github.com/json-iterator/go"
 	"fmt"
 	"io/ioutil"
 	"net/http"

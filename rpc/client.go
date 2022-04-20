@@ -18,11 +18,12 @@ package rpc
 
 import (
 	"context"
-	"encoding/json"
+	json "github.com/json-iterator/go"
 	"errors"
 	"fmt"
 	"net/url"
 	"reflect"
+	stdjson "encoding/json"
 	"strconv"
 	"sync/atomic"
 	"time"
@@ -127,7 +128,7 @@ type readOp struct {
 }
 
 type requestOp struct {
-	ids  []json.RawMessage
+	ids  []stdjson.RawMessage
 	err  error
 	resp chan *jsonrpcMessage // receives up to len(ids) responses
 	sub  *ClientSubscription  // only set for EthSubscribe requests
@@ -234,7 +235,7 @@ func (c *Client) RegisterName(name string, receiver interface{}) error {
 	return c.services.registerName(name, receiver)
 }
 
-func (c *Client) nextID() json.RawMessage {
+func (c *Client) nextID() stdjson.RawMessage {
 	id := atomic.AddUint32(&c.idCounter, 1)
 	return strconv.AppendUint(nil, uint64(id), 10)
 }
@@ -297,7 +298,7 @@ func (c *Client) CallContext(ctx context.Context, result interface{}, method str
 	if err != nil {
 		return err
 	}
-	op := &requestOp{ids: []json.RawMessage{msg.ID}, resp: make(chan *jsonrpcMessage, 1)}
+	op := &requestOp{ids: []stdjson.RawMessage{msg.ID}, resp: make(chan *jsonrpcMessage, 1)}
 
 	if c.isHTTP {
 		err = c.sendHTTP(ctx, op, msg)
@@ -348,7 +349,7 @@ func (c *Client) BatchCallContext(ctx context.Context, b []BatchElem) error {
 		byID = make(map[string]int, len(b))
 	)
 	op := &requestOp{
-		ids:  make([]json.RawMessage, len(b)),
+		ids:  make([]stdjson.RawMessage, len(b)),
 		resp: make(chan *jsonrpcMessage, len(b)),
 	}
 	for i, elem := range b {
@@ -448,7 +449,7 @@ func (c *Client) Subscribe(ctx context.Context, namespace string, channel interf
 		return nil, err
 	}
 	op := &requestOp{
-		ids:  []json.RawMessage{msg.ID},
+		ids:  []stdjson.RawMessage{msg.ID},
 		resp: make(chan *jsonrpcMessage),
 		sub:  newClientSubscription(c, namespace, chanVal),
 	}
@@ -631,9 +632,9 @@ func (c *Client) drainRead() {
 func (c *Client) read(codec ServerCodec) {
 	for {
 		msgs, batch, err := codec.readBatch()
-		if _, ok := err.(*json.SyntaxError); ok {
-			codec.writeJSON(context.Background(), errorMessage(&parseError{err.Error()}))
-		}
+		//if _, ok := err.(*json.SyntaxError); ok {
+		//	codec.writeJSON(context.Background(), errorMessage(&parseError{err.Error()}))
+		//}
 		if err != nil {
 			c.readErr <- err
 			return

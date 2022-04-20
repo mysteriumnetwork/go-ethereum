@@ -19,10 +19,11 @@ package ethclient
 
 import (
 	"context"
-	"encoding/json"
+	json "github.com/json-iterator/go"
 	"errors"
 	"fmt"
 	"math/big"
+	stdjson "encoding/json"
 
 	"github.com/ethereum/go-ethereum"
 	"github.com/ethereum/go-ethereum/common"
@@ -101,7 +102,7 @@ type rpcBlock struct {
 }
 
 func (ec *Client) getBlock(ctx context.Context, method string, args ...interface{}) (*types.Block, error) {
-	var raw json.RawMessage
+	var raw stdjson.RawMessage
 	err := ec.c.CallContext(ctx, &raw, method, args...)
 	if err != nil {
 		return nil, err
@@ -289,7 +290,7 @@ func (ec *Client) TransactionReceipt(ctx context.Context, txHash common.Hash) (*
 // SyncProgress retrieves the current progress of the sync algorithm. If there's
 // no sync currently running, it returns nil.
 func (ec *Client) SyncProgress(ctx context.Context) (*ethereum.SyncProgress, error) {
-	var raw json.RawMessage
+	var raw stdjson.RawMessage
 	if err := ec.c.CallContext(ctx, &raw, "eth_syncing"); err != nil {
 		return nil, err
 	}

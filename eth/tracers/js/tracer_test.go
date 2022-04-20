@@ -17,9 +17,9 @@
 package js
 
 import (
-	"encoding/json"
 	"errors"
 	"math/big"
+	stdjson "encoding/json"
 	"testing"
 	"time"
 
@@ -59,7 +59,7 @@ func testCtx() *vmContext {
 	return &vmContext{blockCtx: vm.BlockContext{BlockNumber: big.NewInt(1)}, txCtx: vm.TxContext{GasPrice: big.NewInt(100000)}}
 }
 
-func runTrace(tracer tracers.Tracer, vmctx *vmContext, chaincfg *params.ChainConfig) (json.RawMessage, error) {
+func runTrace(tracer tracers.Tracer, vmctx *vmContext, chaincfg *params.ChainConfig) (stdjson.RawMessage, error) {
 	var (
 		env             = vm.NewEVM(vmctx.blockCtx, vmctx.txCtx, &dummyStatedb{}, chaincfg, vm.Config{Debug: true, Tracer: tracer})
 		gasLimit uint64 = 31000
