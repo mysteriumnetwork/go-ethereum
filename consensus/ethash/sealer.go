@@ -30,10 +30,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/mysteriumnetwork/go-ethereum/common"
-	"github.com/mysteriumnetwork/go-ethereum/common/hexutil"
-	"github.com/mysteriumnetwork/go-ethereum/consensus"
-	"github.com/mysteriumnetwork/go-ethereum/core/types"
+	"github.com/ethereum/go-ethereum/common"
+	"github.com/ethereum/go-ethereum/common/hexutil"
+	"github.com/ethereum/go-ethereum/consensus"
+	"github.com/ethereum/go-ethereum/core/types"
 )
 
 const (

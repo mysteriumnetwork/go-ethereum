@@ -21,11 +21,11 @@ import (
 	"fmt"
 
 	"github.com/VictoriaMetrics/fastcache"
-	"github.com/mysteriumnetwork/go-ethereum/common"
-	"github.com/mysteriumnetwork/go-ethereum/core/rawdb"
-	"github.com/mysteriumnetwork/go-ethereum/core/types"
-	"github.com/mysteriumnetwork/go-ethereum/ethdb"
-	"github.com/mysteriumnetwork/go-ethereum/trie"
+	"github.com/ethereum/go-ethereum/common"
+	"github.com/ethereum/go-ethereum/core/rawdb"
+	"github.com/ethereum/go-ethereum/core/types"
+	"github.com/ethereum/go-ethereum/ethdb"
+	"github.com/ethereum/go-ethereum/trie"
 	lru "github.com/hashicorp/golang-lru"
 )
 

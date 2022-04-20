@@ -20,15 +20,15 @@ import (
 	"encoding/binary"
 	json "github.com/json-iterator/go"
 
-	"github.com/mysteriumnetwork/go-ethereum/common"
-	"github.com/mysteriumnetwork/go-ethereum/core"
-	"github.com/mysteriumnetwork/go-ethereum/core/state"
-	"github.com/mysteriumnetwork/go-ethereum/core/types"
-	"github.com/mysteriumnetwork/go-ethereum/light"
-	"github.com/mysteriumnetwork/go-ethereum/log"
-	"github.com/mysteriumnetwork/go-ethereum/metrics"
-	"github.com/mysteriumnetwork/go-ethereum/rlp"
-	"github.com/mysteriumnetwork/go-ethereum/trie"
+	"github.com/ethereum/go-ethereum/common"
+	"github.com/ethereum/go-ethereum/core"
+	"github.com/ethereum/go-ethereum/core/state"
+	"github.com/ethereum/go-ethereum/core/types"
+	"github.com/ethereum/go-ethereum/light"
+	"github.com/ethereum/go-ethereum/log"
+	"github.com/ethereum/go-ethereum/metrics"
+	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/ethereum/go-ethereum/trie"
 )
 
 // serverBackend defines the backend functions needed for serving LES requests

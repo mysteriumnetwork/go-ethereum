@@ -23,8 +23,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/mysteriumnetwork/go-ethereum/core"
-	"github.com/mysteriumnetwork/go-ethereum/light"
+	"github.com/ethereum/go-ethereum/core"
+	"github.com/ethereum/go-ethereum/light"
 )
 
 func TestLightPruner(t *testing.T) {

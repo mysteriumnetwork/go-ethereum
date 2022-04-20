@@ -6,7 +6,7 @@ import (
 	json "github.com/json-iterator/go"
 	"errors"
 
-	"github.com/mysteriumnetwork/go-ethereum/common"
+	"github.com/ethereum/go-ethereum/common"
 )
 
 // MarshalJSON marshals as JSON.

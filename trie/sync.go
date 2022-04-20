@@ -20,10 +20,10 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/mysteriumnetwork/go-ethereum/common"
-	"github.com/mysteriumnetwork/go-ethereum/common/prque"
-	"github.com/mysteriumnetwork/go-ethereum/core/rawdb"
-	"github.com/mysteriumnetwork/go-ethereum/ethdb"
+	"github.com/ethereum/go-ethereum/common"
+	"github.com/ethereum/go-ethereum/common/prque"
+	"github.com/ethereum/go-ethereum/core/rawdb"
+	"github.com/ethereum/go-ethereum/ethdb"
 )
 
 // ErrNotRequested is returned by the trie sync when it's requested to process a

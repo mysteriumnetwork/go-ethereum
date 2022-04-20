@@ -22,11 +22,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/mysteriumnetwork/go-ethereum/les/utils"
-	"github.com/mysteriumnetwork/go-ethereum/les/vflux"
-	"github.com/mysteriumnetwork/go-ethereum/log"
-	"github.com/mysteriumnetwork/go-ethereum/p2p/enode"
-	"github.com/mysteriumnetwork/go-ethereum/rlp"
+	"github.com/ethereum/go-ethereum/les/utils"
+	"github.com/ethereum/go-ethereum/les/vflux"
+	"github.com/ethereum/go-ethereum/log"
+	"github.com/ethereum/go-ethereum/p2p/enode"
+	"github.com/ethereum/go-ethereum/rlp"
 )
 
 type (

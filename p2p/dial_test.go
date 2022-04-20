@@ -27,11 +27,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/mysteriumnetwork/go-ethereum/common/mclock"
-	"github.com/mysteriumnetwork/go-ethereum/internal/testlog"
-	"github.com/mysteriumnetwork/go-ethereum/log"
-	"github.com/mysteriumnetwork/go-ethereum/p2p/enode"
-	"github.com/mysteriumnetwork/go-ethereum/p2p/netutil"
+	"github.com/ethereum/go-ethereum/common/mclock"
+	"github.com/ethereum/go-ethereum/internal/testlog"
+	"github.com/ethereum/go-ethereum/log"
+	"github.com/ethereum/go-ethereum/p2p/enode"
+	"github.com/ethereum/go-ethereum/p2p/netutil"
 )
 
 // This test checks that dynamic dials are launched from discovery results.

@@ -21,7 +21,7 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/mysteriumnetwork/go-ethereum/tests/fuzzers/snap"
+	"github.com/ethereum/go-ethereum/tests/fuzzers/snap"
 )
 
 func main() {

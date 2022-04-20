@@ -22,14 +22,14 @@ import (
 	"fmt"
 	"mime"
 
-	"github.com/mysteriumnetwork/go-ethereum/accounts"
-	"github.com/mysteriumnetwork/go-ethereum/common"
-	"github.com/mysteriumnetwork/go-ethereum/common/hexutil"
-	"github.com/mysteriumnetwork/go-ethereum/consensus/clique"
-	"github.com/mysteriumnetwork/go-ethereum/core/types"
-	"github.com/mysteriumnetwork/go-ethereum/crypto"
-	"github.com/mysteriumnetwork/go-ethereum/rlp"
-	"github.com/mysteriumnetwork/go-ethereum/signer/core/apitypes"
+	"github.com/ethereum/go-ethereum/accounts"
+	"github.com/ethereum/go-ethereum/common"
+	"github.com/ethereum/go-ethereum/common/hexutil"
+	"github.com/ethereum/go-ethereum/consensus/clique"
+	"github.com/ethereum/go-ethereum/core/types"
+	"github.com/ethereum/go-ethereum/crypto"
+	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/ethereum/go-ethereum/signer/core/apitypes"
 )
 
 // sign receives a request and produces a signature

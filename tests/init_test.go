@@ -30,7 +30,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/mysteriumnetwork/go-ethereum/params"
+	"github.com/ethereum/go-ethereum/params"
 )
 
 var (

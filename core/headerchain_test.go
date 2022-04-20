@@ -23,12 +23,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/mysteriumnetwork/go-ethereum/consensus"
-	"github.com/mysteriumnetwork/go-ethereum/consensus/ethash"
-	"github.com/mysteriumnetwork/go-ethereum/core/rawdb"
-	"github.com/mysteriumnetwork/go-ethereum/core/types"
-	"github.com/mysteriumnetwork/go-ethereum/log"
-	"github.com/mysteriumnetwork/go-ethereum/params"
+	"github.com/ethereum/go-ethereum/consensus"
+	"github.com/ethereum/go-ethereum/consensus/ethash"
+	"github.com/ethereum/go-ethereum/core/rawdb"
+	"github.com/ethereum/go-ethereum/core/types"
+	"github.com/ethereum/go-ethereum/log"
+	"github.com/ethereum/go-ethereum/params"
 )
 
 func verifyUnbrokenCanonchain(hc *HeaderChain) error {
