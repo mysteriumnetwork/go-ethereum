@@ -6,8 +6,8 @@ import (
 	json "github.com/json-iterator/go"
 	"errors"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
+	"github.com/mysteriumnetwork/go-ethereum/common"
+	"github.com/mysteriumnetwork/go-ethereum/common/hexutil"
 )
 
 var _ = (*logMarshaling)(nil)
