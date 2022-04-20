@@ -26,7 +26,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/mysterium/go-ethereum/log"
+	"github.com/mysteriumnetwork/go-ethereum/log"
 )
 
 // ipcListen will create a Unix socket on the given endpoint.

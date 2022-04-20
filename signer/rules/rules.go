@@ -23,11 +23,11 @@ import (
 	"strings"
 
 	"github.com/dop251/goja"
-	"github.com/mysterium/go-ethereum/internal/ethapi"
-	"github.com/mysterium/go-ethereum/internal/jsre/deps"
-	"github.com/mysterium/go-ethereum/log"
-	"github.com/mysterium/go-ethereum/signer/core"
-	"github.com/mysterium/go-ethereum/signer/storage"
+	"github.com/mysteriumnetwork/go-ethereum/internal/ethapi"
+	"github.com/mysteriumnetwork/go-ethereum/internal/jsre/deps"
+	"github.com/mysteriumnetwork/go-ethereum/log"
+	"github.com/mysteriumnetwork/go-ethereum/signer/core"
+	"github.com/mysteriumnetwork/go-ethereum/signer/storage"
 )
 
 var (

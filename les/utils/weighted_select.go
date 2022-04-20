@@ -20,7 +20,7 @@ import (
 	"math"
 	"math/rand"
 
-	"github.com/mysterium/go-ethereum/log"
+	"github.com/mysteriumnetwork/go-ethereum/log"
 )
 
 type (

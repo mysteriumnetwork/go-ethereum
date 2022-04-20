@@ -23,8 +23,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/mysterium/go-ethereum/core"
-	"github.com/mysterium/go-ethereum/log"
+	"github.com/mysteriumnetwork/go-ethereum/core"
+	"github.com/mysteriumnetwork/go-ethereum/log"
 	"github.com/olekukonko/tablewriter"
 )
 

@@ -21,12 +21,12 @@ import (
 	"math"
 	"math/big"
 
-	"github.com/mysterium/go-ethereum/common"
-	cmath "github.com/mysterium/go-ethereum/common/math"
-	"github.com/mysterium/go-ethereum/core/types"
-	"github.com/mysterium/go-ethereum/core/vm"
-	"github.com/mysterium/go-ethereum/crypto"
-	"github.com/mysterium/go-ethereum/params"
+	"github.com/mysteriumnetwork/go-ethereum/common"
+	cmath "github.com/mysteriumnetwork/go-ethereum/common/math"
+	"github.com/mysteriumnetwork/go-ethereum/core/types"
+	"github.com/mysteriumnetwork/go-ethereum/core/vm"
+	"github.com/mysteriumnetwork/go-ethereum/crypto"
+	"github.com/mysteriumnetwork/go-ethereum/params"
 )
 
 var emptyCodeHash = crypto.Keccak256Hash(nil)

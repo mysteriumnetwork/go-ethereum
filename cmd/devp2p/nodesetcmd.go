@@ -25,10 +25,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/mysterium/go-ethereum/core/forkid"
-	"github.com/mysterium/go-ethereum/p2p/enr"
-	"github.com/mysterium/go-ethereum/params"
-	"github.com/mysterium/go-ethereum/rlp"
+	"github.com/mysteriumnetwork/go-ethereum/core/forkid"
+	"github.com/mysteriumnetwork/go-ethereum/p2p/enr"
+	"github.com/mysteriumnetwork/go-ethereum/params"
+	"github.com/mysteriumnetwork/go-ethereum/rlp"
 	"gopkg.in/urfave/cli.v1"
 )
 

@@ -22,11 +22,11 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/mysterium/go-ethereum/common"
-	"github.com/mysterium/go-ethereum/core"
-	"github.com/mysterium/go-ethereum/core/rawdb"
-	"github.com/mysterium/go-ethereum/core/types"
-	"github.com/mysterium/go-ethereum/rlp"
+	"github.com/mysteriumnetwork/go-ethereum/common"
+	"github.com/mysteriumnetwork/go-ethereum/core"
+	"github.com/mysteriumnetwork/go-ethereum/core/rawdb"
+	"github.com/mysteriumnetwork/go-ethereum/core/types"
+	"github.com/mysteriumnetwork/go-ethereum/rlp"
 )
 
 // errNonCanonicalHash is returned if the requested chain data doesn't belong

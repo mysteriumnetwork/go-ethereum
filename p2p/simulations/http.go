@@ -29,11 +29,11 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/mysterium/go-ethereum/event"
-	"github.com/mysterium/go-ethereum/p2p"
-	"github.com/mysterium/go-ethereum/p2p/enode"
-	"github.com/mysterium/go-ethereum/p2p/simulations/adapters"
-	"github.com/mysterium/go-ethereum/rpc"
+	"github.com/mysteriumnetwork/go-ethereum/event"
+	"github.com/mysteriumnetwork/go-ethereum/p2p"
+	"github.com/mysteriumnetwork/go-ethereum/p2p/enode"
+	"github.com/mysteriumnetwork/go-ethereum/p2p/simulations/adapters"
+	"github.com/mysteriumnetwork/go-ethereum/rpc"
 	"github.com/gorilla/websocket"
 	"github.com/julienschmidt/httprouter"
 )

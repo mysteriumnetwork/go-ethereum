@@ -22,9 +22,9 @@ import (
 	"io"
 	"sort"
 
-	"github.com/mysterium/go-ethereum/cmd/utils"
-	"github.com/mysterium/go-ethereum/internal/debug"
-	"github.com/mysterium/go-ethereum/internal/flags"
+	"github.com/mysteriumnetwork/go-ethereum/cmd/utils"
+	"github.com/mysteriumnetwork/go-ethereum/internal/debug"
+	"github.com/mysteriumnetwork/go-ethereum/internal/flags"
 	"gopkg.in/urfave/cli.v1"
 )
 

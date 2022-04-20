@@ -27,8 +27,8 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/mysterium/go-ethereum/ethdb"
-	"github.com/mysterium/go-ethereum/rlp"
+	"github.com/mysteriumnetwork/go-ethereum/ethdb"
+	"github.com/mysteriumnetwork/go-ethereum/rlp"
 	"github.com/stretchr/testify/require"
 )
 

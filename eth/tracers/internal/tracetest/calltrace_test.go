@@ -26,22 +26,22 @@ import (
 	"testing"
 	"unicode"
 
-	"github.com/mysterium/go-ethereum/common"
-	"github.com/mysterium/go-ethereum/common/hexutil"
-	"github.com/mysterium/go-ethereum/common/math"
-	"github.com/mysterium/go-ethereum/core"
-	"github.com/mysterium/go-ethereum/core/rawdb"
-	"github.com/mysterium/go-ethereum/core/types"
-	"github.com/mysterium/go-ethereum/core/vm"
-	"github.com/mysterium/go-ethereum/crypto"
-	"github.com/mysterium/go-ethereum/eth/tracers"
-	"github.com/mysterium/go-ethereum/params"
-	"github.com/mysterium/go-ethereum/rlp"
-	"github.com/mysterium/go-ethereum/tests"
+	"github.com/mysteriumnetwork/go-ethereum/common"
+	"github.com/mysteriumnetwork/go-ethereum/common/hexutil"
+	"github.com/mysteriumnetwork/go-ethereum/common/math"
+	"github.com/mysteriumnetwork/go-ethereum/core"
+	"github.com/mysteriumnetwork/go-ethereum/core/rawdb"
+	"github.com/mysteriumnetwork/go-ethereum/core/types"
+	"github.com/mysteriumnetwork/go-ethereum/core/vm"
+	"github.com/mysteriumnetwork/go-ethereum/crypto"
+	"github.com/mysteriumnetwork/go-ethereum/eth/tracers"
+	"github.com/mysteriumnetwork/go-ethereum/params"
+	"github.com/mysteriumnetwork/go-ethereum/rlp"
+	"github.com/mysteriumnetwork/go-ethereum/tests"
 
 	// Force-load native and js pacakges, to trigger registration
-	_ "github.com/mysterium/go-ethereum/eth/tracers/js"
-	_ "github.com/mysterium/go-ethereum/eth/tracers/native"
+	_ "github.com/mysteriumnetwork/go-ethereum/eth/tracers/js"
+	_ "github.com/mysteriumnetwork/go-ethereum/eth/tracers/native"
 )
 
 // To generate a new callTracer test, copy paste the makeTest method below into

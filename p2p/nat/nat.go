@@ -25,7 +25,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/mysterium/go-ethereum/log"
+	"github.com/mysteriumnetwork/go-ethereum/log"
 	natpmp "github.com/jackpal/go-nat-pmp"
 )
 

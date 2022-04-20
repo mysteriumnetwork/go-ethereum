@@ -24,16 +24,16 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/mysterium/go-ethereum/common"
-	"github.com/mysterium/go-ethereum/common/mclock"
-	"github.com/mysterium/go-ethereum/core/forkid"
-	"github.com/mysterium/go-ethereum/core/types"
-	"github.com/mysterium/go-ethereum/eth/protocols/eth"
-	"github.com/mysterium/go-ethereum/les/downloader"
-	"github.com/mysterium/go-ethereum/light"
-	"github.com/mysterium/go-ethereum/log"
-	"github.com/mysterium/go-ethereum/p2p"
-	"github.com/mysterium/go-ethereum/params"
+	"github.com/mysteriumnetwork/go-ethereum/common"
+	"github.com/mysteriumnetwork/go-ethereum/common/mclock"
+	"github.com/mysteriumnetwork/go-ethereum/core/forkid"
+	"github.com/mysteriumnetwork/go-ethereum/core/types"
+	"github.com/mysteriumnetwork/go-ethereum/eth/protocols/eth"
+	"github.com/mysteriumnetwork/go-ethereum/les/downloader"
+	"github.com/mysteriumnetwork/go-ethereum/light"
+	"github.com/mysteriumnetwork/go-ethereum/log"
+	"github.com/mysteriumnetwork/go-ethereum/p2p"
+	"github.com/mysteriumnetwork/go-ethereum/params"
 )
 
 // clientHandler is responsible for receiving and processing all incoming server

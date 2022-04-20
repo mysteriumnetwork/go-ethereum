@@ -19,8 +19,8 @@ package main
 import (
 	"time"
 
-	"github.com/mysterium/go-ethereum/log"
-	"github.com/mysterium/go-ethereum/p2p/enode"
+	"github.com/mysteriumnetwork/go-ethereum/log"
+	"github.com/mysteriumnetwork/go-ethereum/p2p/enode"
 )
 
 type crawler struct {

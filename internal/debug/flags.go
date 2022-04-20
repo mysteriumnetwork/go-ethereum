@@ -24,9 +24,9 @@ import (
 	"os"
 	"runtime"
 
-	"github.com/mysterium/go-ethereum/log"
-	"github.com/mysterium/go-ethereum/metrics"
-	"github.com/mysterium/go-ethereum/metrics/exp"
+	"github.com/mysteriumnetwork/go-ethereum/log"
+	"github.com/mysteriumnetwork/go-ethereum/metrics"
+	"github.com/mysteriumnetwork/go-ethereum/metrics/exp"
 	"github.com/fjl/memsize/memsizeui"
 	"github.com/mattn/go-colorable"
 	"github.com/mattn/go-isatty"

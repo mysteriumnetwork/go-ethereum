@@ -16,7 +16,7 @@
 
 package beacon
 
-import "github.com/mysterium/go-ethereum/rpc"
+import "github.com/mysteriumnetwork/go-ethereum/rpc"
 
 var (
 	// VALID is returned by the engine API in the following calls:

@@ -23,12 +23,12 @@ import (
 	"io"
 	"math/big"
 
-	"github.com/mysterium/go-ethereum/common"
-	"github.com/mysterium/go-ethereum/core/types"
-	"github.com/mysterium/go-ethereum/crypto"
-	vfc "github.com/mysterium/go-ethereum/les/vflux/client"
-	"github.com/mysterium/go-ethereum/p2p/enode"
-	"github.com/mysterium/go-ethereum/rlp"
+	"github.com/mysteriumnetwork/go-ethereum/common"
+	"github.com/mysteriumnetwork/go-ethereum/core/types"
+	"github.com/mysteriumnetwork/go-ethereum/crypto"
+	vfc "github.com/mysteriumnetwork/go-ethereum/les/vflux/client"
+	"github.com/mysteriumnetwork/go-ethereum/p2p/enode"
+	"github.com/mysteriumnetwork/go-ethereum/rlp"
 )
 
 // Constants to match up protocol versions and messages

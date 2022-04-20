@@ -24,7 +24,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/mysterium/go-ethereum/common"
+	"github.com/mysteriumnetwork/go-ethereum/common"
 )
 
 // precompiledTest defines the input/output pairs for precompiled contract tests.

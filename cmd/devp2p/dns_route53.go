@@ -30,8 +30,8 @@ import (
 	"github.com/aws/aws-sdk-go-v2/credentials"
 	"github.com/aws/aws-sdk-go-v2/service/route53"
 	"github.com/aws/aws-sdk-go-v2/service/route53/types"
-	"github.com/mysterium/go-ethereum/log"
-	"github.com/mysterium/go-ethereum/p2p/dnsdisc"
+	"github.com/mysteriumnetwork/go-ethereum/log"
+	"github.com/mysteriumnetwork/go-ethereum/p2p/dnsdisc"
 	"gopkg.in/urfave/cli.v1"
 )
 

@@ -21,14 +21,14 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/mysterium/go-ethereum/common"
-	"github.com/mysterium/go-ethereum/core/rawdb"
-	"github.com/mysterium/go-ethereum/core/state"
-	"github.com/mysterium/go-ethereum/core/types"
-	"github.com/mysterium/go-ethereum/crypto"
-	"github.com/mysterium/go-ethereum/ethdb"
-	"github.com/mysterium/go-ethereum/rlp"
-	"github.com/mysterium/go-ethereum/trie"
+	"github.com/mysteriumnetwork/go-ethereum/common"
+	"github.com/mysteriumnetwork/go-ethereum/core/rawdb"
+	"github.com/mysteriumnetwork/go-ethereum/core/state"
+	"github.com/mysteriumnetwork/go-ethereum/core/types"
+	"github.com/mysteriumnetwork/go-ethereum/crypto"
+	"github.com/mysteriumnetwork/go-ethereum/ethdb"
+	"github.com/mysteriumnetwork/go-ethereum/rlp"
+	"github.com/mysteriumnetwork/go-ethereum/trie"
 )
 
 var (

@@ -21,12 +21,12 @@ import (
 	"errors"
 	"time"
 
-	"github.com/mysterium/go-ethereum/common"
-	"github.com/mysterium/go-ethereum/core/rawdb"
-	"github.com/mysterium/go-ethereum/les/downloader"
-	"github.com/mysterium/go-ethereum/light"
-	"github.com/mysterium/go-ethereum/log"
-	"github.com/mysterium/go-ethereum/params"
+	"github.com/mysteriumnetwork/go-ethereum/common"
+	"github.com/mysteriumnetwork/go-ethereum/core/rawdb"
+	"github.com/mysteriumnetwork/go-ethereum/les/downloader"
+	"github.com/mysteriumnetwork/go-ethereum/light"
+	"github.com/mysteriumnetwork/go-ethereum/log"
+	"github.com/mysteriumnetwork/go-ethereum/params"
 )
 
 var errInvalidCheckpoint = errors.New("invalid advertised checkpoint")

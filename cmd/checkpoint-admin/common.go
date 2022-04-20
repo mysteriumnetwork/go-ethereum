@@ -19,15 +19,15 @@ package main
 import (
 	"strconv"
 
-	"github.com/mysterium/go-ethereum/accounts"
-	"github.com/mysterium/go-ethereum/accounts/abi/bind"
-	"github.com/mysterium/go-ethereum/accounts/external"
-	"github.com/mysterium/go-ethereum/cmd/utils"
-	"github.com/mysterium/go-ethereum/common"
-	"github.com/mysterium/go-ethereum/contracts/checkpointoracle"
-	"github.com/mysterium/go-ethereum/ethclient"
-	"github.com/mysterium/go-ethereum/params"
-	"github.com/mysterium/go-ethereum/rpc"
+	"github.com/mysteriumnetwork/go-ethereum/accounts"
+	"github.com/mysteriumnetwork/go-ethereum/accounts/abi/bind"
+	"github.com/mysteriumnetwork/go-ethereum/accounts/external"
+	"github.com/mysteriumnetwork/go-ethereum/cmd/utils"
+	"github.com/mysteriumnetwork/go-ethereum/common"
+	"github.com/mysteriumnetwork/go-ethereum/contracts/checkpointoracle"
+	"github.com/mysteriumnetwork/go-ethereum/ethclient"
+	"github.com/mysteriumnetwork/go-ethereum/params"
+	"github.com/mysteriumnetwork/go-ethereum/rpc"
 	"gopkg.in/urfave/cli.v1"
 )
 

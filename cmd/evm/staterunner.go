@@ -23,11 +23,11 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/mysterium/go-ethereum/core/state"
-	"github.com/mysterium/go-ethereum/core/vm"
-	"github.com/mysterium/go-ethereum/eth/tracers/logger"
-	"github.com/mysterium/go-ethereum/log"
-	"github.com/mysterium/go-ethereum/tests"
+	"github.com/mysteriumnetwork/go-ethereum/core/state"
+	"github.com/mysteriumnetwork/go-ethereum/core/vm"
+	"github.com/mysteriumnetwork/go-ethereum/eth/tracers/logger"
+	"github.com/mysteriumnetwork/go-ethereum/log"
+	"github.com/mysteriumnetwork/go-ethereum/tests"
 
 	"gopkg.in/urfave/cli.v1"
 )

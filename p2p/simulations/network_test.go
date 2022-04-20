@@ -27,10 +27,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/mysterium/go-ethereum/log"
-	"github.com/mysterium/go-ethereum/node"
-	"github.com/mysterium/go-ethereum/p2p/enode"
-	"github.com/mysterium/go-ethereum/p2p/simulations/adapters"
+	"github.com/mysteriumnetwork/go-ethereum/log"
+	"github.com/mysteriumnetwork/go-ethereum/node"
+	"github.com/mysteriumnetwork/go-ethereum/p2p/enode"
+	"github.com/mysteriumnetwork/go-ethereum/p2p/simulations/adapters"
 )
 
 // Tests that a created snapshot with a minimal service only contains the expected connections

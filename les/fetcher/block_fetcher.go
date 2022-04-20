@@ -25,13 +25,13 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/mysterium/go-ethereum/common"
-	"github.com/mysterium/go-ethereum/common/prque"
-	"github.com/mysterium/go-ethereum/consensus"
-	"github.com/mysterium/go-ethereum/core/types"
-	"github.com/mysterium/go-ethereum/log"
-	"github.com/mysterium/go-ethereum/metrics"
-	"github.com/mysterium/go-ethereum/trie"
+	"github.com/mysteriumnetwork/go-ethereum/common"
+	"github.com/mysteriumnetwork/go-ethereum/common/prque"
+	"github.com/mysteriumnetwork/go-ethereum/consensus"
+	"github.com/mysteriumnetwork/go-ethereum/core/types"
+	"github.com/mysteriumnetwork/go-ethereum/log"
+	"github.com/mysteriumnetwork/go-ethereum/metrics"
+	"github.com/mysteriumnetwork/go-ethereum/trie"
 )
 
 const (

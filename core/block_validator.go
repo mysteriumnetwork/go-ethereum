@@ -19,11 +19,11 @@ package core
 import (
 	"fmt"
 
-	"github.com/mysterium/go-ethereum/consensus"
-	"github.com/mysterium/go-ethereum/core/state"
-	"github.com/mysterium/go-ethereum/core/types"
-	"github.com/mysterium/go-ethereum/params"
-	"github.com/mysterium/go-ethereum/trie"
+	"github.com/mysteriumnetwork/go-ethereum/consensus"
+	"github.com/mysteriumnetwork/go-ethereum/core/state"
+	"github.com/mysteriumnetwork/go-ethereum/core/types"
+	"github.com/mysteriumnetwork/go-ethereum/params"
+	"github.com/mysteriumnetwork/go-ethereum/trie"
 )
 
 // BlockValidator is responsible for validating block headers, uncles and

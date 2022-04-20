@@ -22,11 +22,11 @@ import (
 	"math/big"
 	"strings"
 
-	"github.com/mysterium/go-ethereum/accounts/abi"
-	"github.com/mysterium/go-ethereum/accounts/abi/bind"
-	"github.com/mysterium/go-ethereum/accounts/keystore"
-	"github.com/mysterium/go-ethereum/common"
-	"github.com/mysterium/go-ethereum/core/types"
+	"github.com/mysteriumnetwork/go-ethereum/accounts/abi"
+	"github.com/mysteriumnetwork/go-ethereum/accounts/abi/bind"
+	"github.com/mysteriumnetwork/go-ethereum/accounts/keystore"
+	"github.com/mysteriumnetwork/go-ethereum/common"
+	"github.com/mysteriumnetwork/go-ethereum/core/types"
 )
 
 // Signer is an interface defining the callback when a contract requires a

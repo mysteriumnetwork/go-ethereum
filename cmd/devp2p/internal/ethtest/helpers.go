@@ -24,13 +24,13 @@ import (
 	"time"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/mysterium/go-ethereum/common"
-	"github.com/mysterium/go-ethereum/core/types"
-	"github.com/mysterium/go-ethereum/crypto"
-	"github.com/mysterium/go-ethereum/eth/protocols/eth"
-	"github.com/mysterium/go-ethereum/internal/utesting"
-	"github.com/mysterium/go-ethereum/p2p"
-	"github.com/mysterium/go-ethereum/p2p/rlpx"
+	"github.com/mysteriumnetwork/go-ethereum/common"
+	"github.com/mysteriumnetwork/go-ethereum/core/types"
+	"github.com/mysteriumnetwork/go-ethereum/crypto"
+	"github.com/mysteriumnetwork/go-ethereum/eth/protocols/eth"
+	"github.com/mysteriumnetwork/go-ethereum/internal/utesting"
+	"github.com/mysteriumnetwork/go-ethereum/p2p"
+	"github.com/mysteriumnetwork/go-ethereum/p2p/rlpx"
 )
 
 var (

@@ -23,12 +23,11 @@ import (
 	"runtime"
 	"runtime/debug"
 
-	"github.com/mysterium/go-ethereum"
-	"github.com/mysterium/go-ethereum/common"
-	"github.com/mysterium/go-ethereum/common/hexutil"
-	"github.com/mysterium/go-ethereum/core/types"
-	"github.com/mysterium/go-ethereum/p2p"
-	"github.com/mysterium/go-ethereum/rpc"
+	"github.com/mysteriumnetwork/go-ethereum/common"
+	"github.com/mysteriumnetwork/go-ethereum/common/hexutil"
+	"github.com/mysteriumnetwork/go-ethereum/core/types"
+	"github.com/mysteriumnetwork/go-ethereum/p2p"
+	"github.com/mysteriumnetwork/go-ethereum/rpc"
 )
 
 // Client is a wrapper around rpc.Client that implements geth-specific functionality.

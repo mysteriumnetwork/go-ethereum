@@ -19,7 +19,7 @@ package params
 import (
 	"math/big"
 
-	"github.com/mysterium/go-ethereum/common"
+	"github.com/mysteriumnetwork/go-ethereum/common"
 )
 
 // DAOForkBlockExtra is the block header extra-data field to set for the DAO fork

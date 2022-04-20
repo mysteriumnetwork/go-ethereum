@@ -19,9 +19,9 @@ package vm
 import (
 	"sync/atomic"
 
-	"github.com/mysterium/go-ethereum/common"
-	"github.com/mysterium/go-ethereum/core/types"
-	"github.com/mysterium/go-ethereum/params"
+	"github.com/mysteriumnetwork/go-ethereum/common"
+	"github.com/mysteriumnetwork/go-ethereum/core/types"
+	"github.com/mysteriumnetwork/go-ethereum/params"
 	"github.com/holiman/uint256"
 	"golang.org/x/crypto/sha3"
 )

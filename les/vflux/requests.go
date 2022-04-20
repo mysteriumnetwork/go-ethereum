@@ -21,7 +21,7 @@ import (
 	"math"
 	"math/big"
 
-	"github.com/mysterium/go-ethereum/rlp"
+	"github.com/mysteriumnetwork/go-ethereum/rlp"
 )
 
 var ErrNoReply = errors.New("no reply for given request")

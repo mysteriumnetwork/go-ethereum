@@ -28,9 +28,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/mysterium/go-ethereum/accounts/keystore"
-	"github.com/mysterium/go-ethereum/common"
-	"github.com/mysterium/go-ethereum/core/types"
+	"github.com/mysteriumnetwork/go-ethereum/accounts/keystore"
+	"github.com/mysteriumnetwork/go-ethereum/common"
+	"github.com/mysteriumnetwork/go-ethereum/core/types"
 )
 
 // Tests that the account management snippets work correctly.

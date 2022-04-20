@@ -21,8 +21,7 @@ package geth
 import (
 	"errors"
 
-	"github.com/mysterium/go-ethereum"
-	"github.com/mysterium/go-ethereum/common"
+	"github.com/mysteriumnetwork/go-ethereum/common"
 )
 
 // Subscription represents an event subscription where events are

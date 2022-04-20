@@ -31,11 +31,11 @@ import (
 	"syscall"
 
 	"github.com/dop251/goja"
-	"github.com/mysterium/go-ethereum/console/prompt"
-	"github.com/mysterium/go-ethereum/internal/jsre"
-	"github.com/mysterium/go-ethereum/internal/jsre/deps"
-	"github.com/mysterium/go-ethereum/internal/web3ext"
-	"github.com/mysterium/go-ethereum/rpc"
+	"github.com/mysteriumnetwork/go-ethereum/console/prompt"
+	"github.com/mysteriumnetwork/go-ethereum/internal/jsre"
+	"github.com/mysteriumnetwork/go-ethereum/internal/jsre/deps"
+	"github.com/mysteriumnetwork/go-ethereum/internal/web3ext"
+	"github.com/mysteriumnetwork/go-ethereum/rpc"
 	"github.com/mattn/go-colorable"
 	"github.com/peterh/liner"
 )

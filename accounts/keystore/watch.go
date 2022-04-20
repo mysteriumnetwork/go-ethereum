@@ -22,7 +22,7 @@ package keystore
 import (
 	"time"
 
-	"github.com/mysterium/go-ethereum/log"
+	"github.com/mysteriumnetwork/go-ethereum/log"
 	"github.com/rjeczalik/notify"
 )
 

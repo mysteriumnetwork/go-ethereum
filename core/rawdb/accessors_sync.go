@@ -19,10 +19,10 @@ package rawdb
 import (
 	"bytes"
 
-	"github.com/mysterium/go-ethereum/core/types"
-	"github.com/mysterium/go-ethereum/ethdb"
-	"github.com/mysterium/go-ethereum/log"
-	"github.com/mysterium/go-ethereum/rlp"
+	"github.com/mysteriumnetwork/go-ethereum/core/types"
+	"github.com/mysteriumnetwork/go-ethereum/ethdb"
+	"github.com/mysteriumnetwork/go-ethereum/log"
+	"github.com/mysteriumnetwork/go-ethereum/rlp"
 )
 
 // ReadSkeletonSyncStatus retrieves the serialized sync status saved at shutdown.

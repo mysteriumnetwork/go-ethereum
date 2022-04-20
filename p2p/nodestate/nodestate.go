@@ -23,13 +23,13 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/mysterium/go-ethereum/common/mclock"
-	"github.com/mysterium/go-ethereum/ethdb"
-	"github.com/mysterium/go-ethereum/log"
-	"github.com/mysterium/go-ethereum/metrics"
-	"github.com/mysterium/go-ethereum/p2p/enode"
-	"github.com/mysterium/go-ethereum/p2p/enr"
-	"github.com/mysterium/go-ethereum/rlp"
+	"github.com/mysteriumnetwork/go-ethereum/common/mclock"
+	"github.com/mysteriumnetwork/go-ethereum/ethdb"
+	"github.com/mysteriumnetwork/go-ethereum/log"
+	"github.com/mysteriumnetwork/go-ethereum/metrics"
+	"github.com/mysteriumnetwork/go-ethereum/p2p/enode"
+	"github.com/mysteriumnetwork/go-ethereum/p2p/enr"
+	"github.com/mysteriumnetwork/go-ethereum/rlp"
 )
 
 var (

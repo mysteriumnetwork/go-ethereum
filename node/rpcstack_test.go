@@ -26,9 +26,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/mysterium/go-ethereum/internal/testlog"
-	"github.com/mysterium/go-ethereum/log"
-	"github.com/mysterium/go-ethereum/rpc"
+	"github.com/mysteriumnetwork/go-ethereum/internal/testlog"
+	"github.com/mysteriumnetwork/go-ethereum/log"
+	"github.com/mysteriumnetwork/go-ethereum/rpc"
 	"github.com/golang-jwt/jwt/v4"
 	"github.com/gorilla/websocket"
 	"github.com/stretchr/testify/assert"

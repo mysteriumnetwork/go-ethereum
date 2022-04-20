@@ -21,7 +21,7 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/mysterium/go-ethereum/tests/fuzzers/rangeproof"
+	"github.com/mysteriumnetwork/go-ethereum/tests/fuzzers/rangeproof"
 )
 
 func main() {

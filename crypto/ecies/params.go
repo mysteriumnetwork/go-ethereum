@@ -42,7 +42,7 @@ import (
 	"fmt"
 	"hash"
 
-	ethcrypto "github.com/mysterium/go-ethereum/crypto"
+	ethcrypto "github.com/mysteriumnetwork/go-ethereum/crypto"
 )
 
 var (

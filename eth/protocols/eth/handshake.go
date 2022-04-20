@@ -21,9 +21,9 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/mysterium/go-ethereum/common"
-	"github.com/mysterium/go-ethereum/core/forkid"
-	"github.com/mysterium/go-ethereum/p2p"
+	"github.com/mysteriumnetwork/go-ethereum/common"
+	"github.com/mysteriumnetwork/go-ethereum/core/forkid"
+	"github.com/mysteriumnetwork/go-ethereum/p2p"
 )
 
 const (

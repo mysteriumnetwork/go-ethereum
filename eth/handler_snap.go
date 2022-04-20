@@ -17,9 +17,9 @@
 package eth
 
 import (
-	"github.com/mysterium/go-ethereum/core"
-	"github.com/mysterium/go-ethereum/eth/protocols/snap"
-	"github.com/mysterium/go-ethereum/p2p/enode"
+	"github.com/mysteriumnetwork/go-ethereum/core"
+	"github.com/mysteriumnetwork/go-ethereum/eth/protocols/snap"
+	"github.com/mysteriumnetwork/go-ethereum/p2p/enode"
 )
 
 // snapHandler implements the snap.Backend interface to handle the various network

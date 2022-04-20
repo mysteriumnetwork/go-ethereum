@@ -17,7 +17,7 @@
 package vm
 
 import (
-	"github.com/mysterium/go-ethereum/params"
+	"github.com/mysteriumnetwork/go-ethereum/params"
 )
 
 func minSwapStack(n int) int {

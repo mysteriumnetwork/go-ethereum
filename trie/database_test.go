@@ -19,8 +19,8 @@ package trie
 import (
 	"testing"
 
-	"github.com/mysterium/go-ethereum/common"
-	"github.com/mysterium/go-ethereum/ethdb/memorydb"
+	"github.com/mysteriumnetwork/go-ethereum/common"
+	"github.com/mysteriumnetwork/go-ethereum/ethdb/memorydb"
 )
 
 // Tests that the trie database returns a missing trie node error if attempting

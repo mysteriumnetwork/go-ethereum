@@ -7,12 +7,12 @@ import (
 	"math/big"
 	"strings"
 
-	ethereum "github.com/mysterium/go-ethereum"
-	"github.com/mysterium/go-ethereum/accounts/abi"
-	"github.com/mysterium/go-ethereum/accounts/abi/bind"
-	"github.com/mysterium/go-ethereum/common"
-	"github.com/mysterium/go-ethereum/core/types"
-	"github.com/mysterium/go-ethereum/event"
+	ethereum "github.com/mysteriumnetwork/go-ethereum"
+	"github.com/mysteriumnetwork/go-ethereum/accounts/abi"
+	"github.com/mysteriumnetwork/go-ethereum/accounts/abi/bind"
+	"github.com/mysteriumnetwork/go-ethereum/common"
+	"github.com/mysteriumnetwork/go-ethereum/core/types"
+	"github.com/mysteriumnetwork/go-ethereum/event"
 )
 
 // Reference imports to suppress errors if they are not otherwise used.

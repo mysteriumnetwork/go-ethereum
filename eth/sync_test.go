@@ -21,11 +21,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/mysterium/go-ethereum/eth/downloader"
-	"github.com/mysterium/go-ethereum/eth/protocols/eth"
-	"github.com/mysterium/go-ethereum/eth/protocols/snap"
-	"github.com/mysterium/go-ethereum/p2p"
-	"github.com/mysterium/go-ethereum/p2p/enode"
+	"github.com/mysteriumnetwork/go-ethereum/eth/downloader"
+	"github.com/mysteriumnetwork/go-ethereum/eth/protocols/eth"
+	"github.com/mysteriumnetwork/go-ethereum/eth/protocols/snap"
+	"github.com/mysteriumnetwork/go-ethereum/p2p"
+	"github.com/mysteriumnetwork/go-ethereum/p2p/enode"
 )
 
 // Tests that snap sync is disabled after a successful sync cycle.

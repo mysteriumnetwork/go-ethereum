@@ -23,12 +23,12 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/mysterium/go-ethereum/common/mclock"
-	"github.com/mysterium/go-ethereum/eth/ethconfig"
-	"github.com/mysterium/go-ethereum/ethdb"
-	"github.com/mysterium/go-ethereum/les/flowcontrol"
-	"github.com/mysterium/go-ethereum/log"
-	"github.com/mysterium/go-ethereum/metrics"
+	"github.com/mysteriumnetwork/go-ethereum/common/mclock"
+	"github.com/mysteriumnetwork/go-ethereum/eth/ethconfig"
+	"github.com/mysteriumnetwork/go-ethereum/ethdb"
+	"github.com/mysteriumnetwork/go-ethereum/les/flowcontrol"
+	"github.com/mysteriumnetwork/go-ethereum/log"
+	"github.com/mysteriumnetwork/go-ethereum/metrics"
 )
 
 const makeCostStats = false // make request cost statistics during operation

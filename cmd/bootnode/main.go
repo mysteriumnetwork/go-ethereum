@@ -24,13 +24,13 @@ import (
 	"net"
 	"os"
 
-	"github.com/mysterium/go-ethereum/cmd/utils"
-	"github.com/mysterium/go-ethereum/crypto"
-	"github.com/mysterium/go-ethereum/log"
-	"github.com/mysterium/go-ethereum/p2p/discover"
-	"github.com/mysterium/go-ethereum/p2p/enode"
-	"github.com/mysterium/go-ethereum/p2p/nat"
-	"github.com/mysterium/go-ethereum/p2p/netutil"
+	"github.com/mysteriumnetwork/go-ethereum/cmd/utils"
+	"github.com/mysteriumnetwork/go-ethereum/crypto"
+	"github.com/mysteriumnetwork/go-ethereum/log"
+	"github.com/mysteriumnetwork/go-ethereum/p2p/discover"
+	"github.com/mysteriumnetwork/go-ethereum/p2p/enode"
+	"github.com/mysteriumnetwork/go-ethereum/p2p/nat"
+	"github.com/mysteriumnetwork/go-ethereum/p2p/netutil"
 )
 
 func main() {

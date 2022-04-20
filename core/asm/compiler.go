@@ -22,8 +22,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/mysterium/go-ethereum/common/math"
-	"github.com/mysterium/go-ethereum/core/vm"
+	"github.com/mysteriumnetwork/go-ethereum/common/math"
+	"github.com/mysteriumnetwork/go-ethereum/core/vm"
 )
 
 // Compiler contains information about the parsed source

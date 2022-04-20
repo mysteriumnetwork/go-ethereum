@@ -19,9 +19,9 @@ package vm
 import (
 	"errors"
 
-	"github.com/mysterium/go-ethereum/common"
-	"github.com/mysterium/go-ethereum/common/math"
-	"github.com/mysterium/go-ethereum/params"
+	"github.com/mysteriumnetwork/go-ethereum/common"
+	"github.com/mysteriumnetwork/go-ethereum/common/math"
+	"github.com/mysteriumnetwork/go-ethereum/params"
 )
 
 // memoryGasCost calculates the quadratic gas for memory expansion. It does so

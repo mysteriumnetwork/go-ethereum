@@ -23,9 +23,9 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/mysterium/go-ethereum/crypto"
-	"github.com/mysterium/go-ethereum/p2p/enr"
-	"github.com/mysterium/go-ethereum/rlp"
+	"github.com/mysteriumnetwork/go-ethereum/crypto"
+	"github.com/mysteriumnetwork/go-ethereum/p2p/enr"
+	"github.com/mysteriumnetwork/go-ethereum/rlp"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

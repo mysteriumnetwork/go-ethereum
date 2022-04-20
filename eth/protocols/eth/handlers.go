@@ -20,12 +20,12 @@ import (
 	json "github.com/json-iterator/go"
 	"fmt"
 
-	"github.com/mysterium/go-ethereum/common"
-	"github.com/mysterium/go-ethereum/core"
-	"github.com/mysterium/go-ethereum/core/types"
-	"github.com/mysterium/go-ethereum/log"
-	"github.com/mysterium/go-ethereum/rlp"
-	"github.com/mysterium/go-ethereum/trie"
+	"github.com/mysteriumnetwork/go-ethereum/common"
+	"github.com/mysteriumnetwork/go-ethereum/core"
+	"github.com/mysteriumnetwork/go-ethereum/core/types"
+	"github.com/mysteriumnetwork/go-ethereum/log"
+	"github.com/mysteriumnetwork/go-ethereum/rlp"
+	"github.com/mysteriumnetwork/go-ethereum/trie"
 )
 
 // handleGetBlockHeaders66 is the eth/66 version of handleGetBlockHeaders

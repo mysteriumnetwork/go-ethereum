@@ -31,10 +31,10 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/mysterium/go-ethereum/common"
-	"github.com/mysterium/go-ethereum/console/prompt"
-	"github.com/mysterium/go-ethereum/core"
-	"github.com/mysterium/go-ethereum/log"
+	"github.com/mysteriumnetwork/go-ethereum/common"
+	"github.com/mysteriumnetwork/go-ethereum/console/prompt"
+	"github.com/mysteriumnetwork/go-ethereum/core"
+	"github.com/mysteriumnetwork/go-ethereum/log"
 	"github.com/peterh/liner"
 	"golang.org/x/crypto/ssh/terminal"
 )

@@ -19,9 +19,9 @@ package client
 import (
 	"sync"
 
-	"github.com/mysterium/go-ethereum/les/utils"
-	"github.com/mysterium/go-ethereum/p2p/enode"
-	"github.com/mysterium/go-ethereum/p2p/nodestate"
+	"github.com/mysteriumnetwork/go-ethereum/les/utils"
+	"github.com/mysteriumnetwork/go-ethereum/p2p/enode"
+	"github.com/mysteriumnetwork/go-ethereum/p2p/nodestate"
 )
 
 // WrsIterator returns nodes from the specified selectable set with a weighted random

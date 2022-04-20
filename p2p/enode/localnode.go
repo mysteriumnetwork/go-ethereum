@@ -26,9 +26,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/mysterium/go-ethereum/log"
-	"github.com/mysterium/go-ethereum/p2p/enr"
-	"github.com/mysterium/go-ethereum/p2p/netutil"
+	"github.com/mysteriumnetwork/go-ethereum/log"
+	"github.com/mysteriumnetwork/go-ethereum/p2p/enr"
+	"github.com/mysteriumnetwork/go-ethereum/p2p/netutil"
 )
 
 const (

@@ -17,8 +17,8 @@
 package core
 
 import (
-	"github.com/mysterium/go-ethereum/common"
-	"github.com/mysterium/go-ethereum/core/types"
+	"github.com/mysteriumnetwork/go-ethereum/common"
+	"github.com/mysteriumnetwork/go-ethereum/core/types"
 )
 
 // NewTxsEvent is posted when a batch of transactions enter the transaction pool.

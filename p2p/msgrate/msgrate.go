@@ -24,7 +24,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/mysterium/go-ethereum/log"
+	"github.com/mysteriumnetwork/go-ethereum/log"
 )
 
 // measurementImpact is the impact a single measurement has on a peer's final

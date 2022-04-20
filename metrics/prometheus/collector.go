@@ -22,7 +22,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/mysterium/go-ethereum/metrics"
+	"github.com/mysteriumnetwork/go-ethereum/metrics"
 )
 
 var (

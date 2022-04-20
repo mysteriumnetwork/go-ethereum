@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/mysterium/go-ethereum/metrics"
+	"github.com/mysteriumnetwork/go-ethereum/metrics"
 )
 
 func TestMain(m *testing.M) {

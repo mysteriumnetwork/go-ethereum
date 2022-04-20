@@ -19,7 +19,7 @@ package core
 import (
 	"errors"
 
-	"github.com/mysterium/go-ethereum/core/types"
+	"github.com/mysteriumnetwork/go-ethereum/core/types"
 )
 
 var (

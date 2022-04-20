@@ -16,7 +16,7 @@
 
 package state
 
-import "github.com/mysterium/go-ethereum/metrics"
+import "github.com/mysteriumnetwork/go-ethereum/metrics"
 
 var (
 	accountUpdatedMeter   = metrics.NewRegisteredMeter("state/update/account", nil)

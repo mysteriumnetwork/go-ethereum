@@ -20,7 +20,7 @@ package utils
 import (
 	"fmt"
 
-	"github.com/mysterium/go-ethereum/console/prompt"
+	"github.com/mysteriumnetwork/go-ethereum/console/prompt"
 )
 
 // GetPassPhrase displays the given text(prompt) to the user and requests some textual

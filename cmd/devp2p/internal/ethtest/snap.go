@@ -22,12 +22,12 @@ import (
 	"fmt"
 	"math/rand"
 
-	"github.com/mysterium/go-ethereum/common"
-	"github.com/mysterium/go-ethereum/crypto"
-	"github.com/mysterium/go-ethereum/eth/protocols/snap"
-	"github.com/mysterium/go-ethereum/internal/utesting"
-	"github.com/mysterium/go-ethereum/light"
-	"github.com/mysterium/go-ethereum/trie"
+	"github.com/mysteriumnetwork/go-ethereum/common"
+	"github.com/mysteriumnetwork/go-ethereum/crypto"
+	"github.com/mysteriumnetwork/go-ethereum/eth/protocols/snap"
+	"github.com/mysteriumnetwork/go-ethereum/internal/utesting"
+	"github.com/mysteriumnetwork/go-ethereum/light"
+	"github.com/mysteriumnetwork/go-ethereum/trie"
 	"golang.org/x/crypto/sha3"
 )
 

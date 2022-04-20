@@ -21,11 +21,11 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/mysterium/go-ethereum/core"
-	"github.com/mysterium/go-ethereum/core/state"
-	"github.com/mysterium/go-ethereum/core/types"
-	"github.com/mysterium/go-ethereum/core/vm"
-	"github.com/mysterium/go-ethereum/light"
+	"github.com/mysteriumnetwork/go-ethereum/core"
+	"github.com/mysteriumnetwork/go-ethereum/core/state"
+	"github.com/mysteriumnetwork/go-ethereum/core/types"
+	"github.com/mysteriumnetwork/go-ethereum/core/vm"
+	"github.com/mysteriumnetwork/go-ethereum/light"
 )
 
 // stateAtBlock retrieves the state database associated with a certain block.

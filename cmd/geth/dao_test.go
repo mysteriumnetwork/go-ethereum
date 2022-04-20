@@ -22,9 +22,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/mysterium/go-ethereum/common"
-	"github.com/mysterium/go-ethereum/core/rawdb"
-	"github.com/mysterium/go-ethereum/params"
+	"github.com/mysteriumnetwork/go-ethereum/common"
+	"github.com/mysteriumnetwork/go-ethereum/core/rawdb"
+	"github.com/mysteriumnetwork/go-ethereum/params"
 )
 
 // Genesis block for nodes which don't care about the DAO fork (i.e. not configured)

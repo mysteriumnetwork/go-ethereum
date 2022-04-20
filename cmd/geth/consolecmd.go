@@ -22,10 +22,10 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/mysterium/go-ethereum/cmd/utils"
-	"github.com/mysterium/go-ethereum/console"
-	"github.com/mysterium/go-ethereum/node"
-	"github.com/mysterium/go-ethereum/rpc"
+	"github.com/mysteriumnetwork/go-ethereum/cmd/utils"
+	"github.com/mysteriumnetwork/go-ethereum/console"
+	"github.com/mysteriumnetwork/go-ethereum/node"
+	"github.com/mysteriumnetwork/go-ethereum/rpc"
 	"gopkg.in/urfave/cli.v1"
 )
 

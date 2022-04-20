@@ -21,8 +21,8 @@ import (
 	"io/ioutil"
 	"strings"
 
-	"github.com/mysterium/go-ethereum/accounts/keystore"
-	"github.com/mysterium/go-ethereum/cmd/utils"
+	"github.com/mysteriumnetwork/go-ethereum/accounts/keystore"
+	"github.com/mysteriumnetwork/go-ethereum/cmd/utils"
 	"gopkg.in/urfave/cli.v1"
 )
 

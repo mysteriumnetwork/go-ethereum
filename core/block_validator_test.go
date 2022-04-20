@@ -23,16 +23,16 @@ import (
 	"testing"
 	"time"
 
-	"github.com/mysterium/go-ethereum/common"
-	"github.com/mysterium/go-ethereum/consensus"
-	"github.com/mysterium/go-ethereum/consensus/beacon"
-	"github.com/mysterium/go-ethereum/consensus/clique"
-	"github.com/mysterium/go-ethereum/consensus/ethash"
-	"github.com/mysterium/go-ethereum/core/rawdb"
-	"github.com/mysterium/go-ethereum/core/types"
-	"github.com/mysterium/go-ethereum/core/vm"
-	"github.com/mysterium/go-ethereum/crypto"
-	"github.com/mysterium/go-ethereum/params"
+	"github.com/mysteriumnetwork/go-ethereum/common"
+	"github.com/mysteriumnetwork/go-ethereum/consensus"
+	"github.com/mysteriumnetwork/go-ethereum/consensus/beacon"
+	"github.com/mysteriumnetwork/go-ethereum/consensus/clique"
+	"github.com/mysteriumnetwork/go-ethereum/consensus/ethash"
+	"github.com/mysteriumnetwork/go-ethereum/core/rawdb"
+	"github.com/mysteriumnetwork/go-ethereum/core/types"
+	"github.com/mysteriumnetwork/go-ethereum/core/vm"
+	"github.com/mysteriumnetwork/go-ethereum/crypto"
+	"github.com/mysteriumnetwork/go-ethereum/params"
 )
 
 // Tests that simple header verification works, for both good and bad blocks.

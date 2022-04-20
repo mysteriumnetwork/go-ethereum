@@ -24,13 +24,13 @@ import (
 	"io/ioutil"
 	"math/big"
 
-	"github.com/mysterium/go-ethereum/accounts"
-	"github.com/mysterium/go-ethereum/accounts/external"
-	"github.com/mysterium/go-ethereum/accounts/keystore"
-	"github.com/mysterium/go-ethereum/common"
-	"github.com/mysterium/go-ethereum/core/types"
-	"github.com/mysterium/go-ethereum/crypto"
-	"github.com/mysterium/go-ethereum/log"
+	"github.com/mysteriumnetwork/go-ethereum/accounts"
+	"github.com/mysteriumnetwork/go-ethereum/accounts/external"
+	"github.com/mysteriumnetwork/go-ethereum/accounts/keystore"
+	"github.com/mysteriumnetwork/go-ethereum/common"
+	"github.com/mysteriumnetwork/go-ethereum/core/types"
+	"github.com/mysteriumnetwork/go-ethereum/crypto"
+	"github.com/mysteriumnetwork/go-ethereum/log"
 )
 
 // ErrNoChainID is returned whenever the user failed to specify a chain id.

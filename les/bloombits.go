@@ -19,8 +19,8 @@ package les
 import (
 	"time"
 
-	"github.com/mysterium/go-ethereum/common/bitutil"
-	"github.com/mysterium/go-ethereum/light"
+	"github.com/mysteriumnetwork/go-ethereum/common/bitutil"
+	"github.com/mysteriumnetwork/go-ethereum/light"
 )
 
 const (

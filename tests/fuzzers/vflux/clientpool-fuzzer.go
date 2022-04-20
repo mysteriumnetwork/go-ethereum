@@ -24,14 +24,14 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/mysterium/go-ethereum/common/mclock"
-	"github.com/mysterium/go-ethereum/ethdb/memorydb"
-	"github.com/mysterium/go-ethereum/les/vflux"
-	vfs "github.com/mysterium/go-ethereum/les/vflux/server"
-	"github.com/mysterium/go-ethereum/log"
-	"github.com/mysterium/go-ethereum/p2p/enode"
-	"github.com/mysterium/go-ethereum/p2p/enr"
-	"github.com/mysterium/go-ethereum/rlp"
+	"github.com/mysteriumnetwork/go-ethereum/common/mclock"
+	"github.com/mysteriumnetwork/go-ethereum/ethdb/memorydb"
+	"github.com/mysteriumnetwork/go-ethereum/les/vflux"
+	vfs "github.com/mysteriumnetwork/go-ethereum/les/vflux/server"
+	"github.com/mysteriumnetwork/go-ethereum/log"
+	"github.com/mysteriumnetwork/go-ethereum/p2p/enode"
+	"github.com/mysteriumnetwork/go-ethereum/p2p/enr"
+	"github.com/mysteriumnetwork/go-ethereum/rlp"
 )
 
 var (

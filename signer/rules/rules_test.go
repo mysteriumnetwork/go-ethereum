@@ -22,14 +22,14 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/mysterium/go-ethereum/accounts"
-	"github.com/mysterium/go-ethereum/common"
-	"github.com/mysterium/go-ethereum/common/hexutil"
-	"github.com/mysterium/go-ethereum/core/types"
-	"github.com/mysterium/go-ethereum/internal/ethapi"
-	"github.com/mysterium/go-ethereum/signer/core"
-	"github.com/mysterium/go-ethereum/signer/core/apitypes"
-	"github.com/mysterium/go-ethereum/signer/storage"
+	"github.com/mysteriumnetwork/go-ethereum/accounts"
+	"github.com/mysteriumnetwork/go-ethereum/common"
+	"github.com/mysteriumnetwork/go-ethereum/common/hexutil"
+	"github.com/mysteriumnetwork/go-ethereum/core/types"
+	"github.com/mysteriumnetwork/go-ethereum/internal/ethapi"
+	"github.com/mysteriumnetwork/go-ethereum/signer/core"
+	"github.com/mysteriumnetwork/go-ethereum/signer/core/apitypes"
+	"github.com/mysteriumnetwork/go-ethereum/signer/storage"
 )
 
 const JS = `

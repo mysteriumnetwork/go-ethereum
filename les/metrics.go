@@ -17,8 +17,8 @@
 package les
 
 import (
-	"github.com/mysterium/go-ethereum/metrics"
-	"github.com/mysterium/go-ethereum/p2p"
+	"github.com/mysteriumnetwork/go-ethereum/metrics"
+	"github.com/mysteriumnetwork/go-ethereum/p2p"
 )
 
 var (

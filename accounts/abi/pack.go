@@ -22,8 +22,8 @@ import (
 	"math/big"
 	"reflect"
 
-	"github.com/mysterium/go-ethereum/common"
-	"github.com/mysterium/go-ethereum/common/math"
+	"github.com/mysteriumnetwork/go-ethereum/common"
+	"github.com/mysteriumnetwork/go-ethereum/common/math"
 )
 
 // packBytesSlice packs the given bytes as [L, V] as the canonical representation

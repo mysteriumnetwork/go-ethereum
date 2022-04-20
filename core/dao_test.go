@@ -20,10 +20,10 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/mysterium/go-ethereum/consensus/ethash"
-	"github.com/mysterium/go-ethereum/core/rawdb"
-	"github.com/mysterium/go-ethereum/core/vm"
-	"github.com/mysterium/go-ethereum/params"
+	"github.com/mysteriumnetwork/go-ethereum/consensus/ethash"
+	"github.com/mysteriumnetwork/go-ethereum/core/rawdb"
+	"github.com/mysteriumnetwork/go-ethereum/core/vm"
+	"github.com/mysteriumnetwork/go-ethereum/params"
 )
 
 // Tests that DAO-fork enabled clients can properly filter out fork-commencing

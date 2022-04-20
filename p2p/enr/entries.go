@@ -21,7 +21,7 @@ import (
 	"io"
 	"net"
 
-	"github.com/mysterium/go-ethereum/rlp"
+	"github.com/mysteriumnetwork/go-ethereum/rlp"
 )
 
 // Entry is implemented by known node record entry types.

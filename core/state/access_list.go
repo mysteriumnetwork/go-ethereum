@@ -17,7 +17,7 @@
 package state
 
 import (
-	"github.com/mysterium/go-ethereum/common"
+	"github.com/mysteriumnetwork/go-ethereum/common"
 )
 
 type accessList struct {

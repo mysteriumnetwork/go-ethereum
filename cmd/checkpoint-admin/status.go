@@ -19,8 +19,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/mysterium/go-ethereum/cmd/utils"
-	"github.com/mysterium/go-ethereum/common"
+	"github.com/mysteriumnetwork/go-ethereum/cmd/utils"
+	"github.com/mysteriumnetwork/go-ethereum/common"
 	"gopkg.in/urfave/cli.v1"
 )
 

@@ -29,10 +29,10 @@ import (
 	"testing"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/mysterium/go-ethereum/crypto"
-	"github.com/mysterium/go-ethereum/crypto/ecies"
-	"github.com/mysterium/go-ethereum/p2p/simulations/pipes"
-	"github.com/mysterium/go-ethereum/rlp"
+	"github.com/mysteriumnetwork/go-ethereum/crypto"
+	"github.com/mysteriumnetwork/go-ethereum/crypto/ecies"
+	"github.com/mysteriumnetwork/go-ethereum/p2p/simulations/pipes"
+	"github.com/mysteriumnetwork/go-ethereum/rlp"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -22,7 +22,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/mysterium/go-ethereum/common"
+	"github.com/mysteriumnetwork/go-ethereum/common"
 )
 
 func TestInterfaceGetSet(t *testing.T) {

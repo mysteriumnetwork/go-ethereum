@@ -19,9 +19,9 @@ package downloader
 import (
 	"time"
 
-	"github.com/mysterium/go-ethereum/common"
-	"github.com/mysterium/go-ethereum/core/types"
-	"github.com/mysterium/go-ethereum/eth/protocols/eth"
+	"github.com/mysteriumnetwork/go-ethereum/common"
+	"github.com/mysteriumnetwork/go-ethereum/core/types"
+	"github.com/mysteriumnetwork/go-ethereum/eth/protocols/eth"
 )
 
 // fetchHeadersByHash is a blocking version of Peer.RequestHeadersByHash which

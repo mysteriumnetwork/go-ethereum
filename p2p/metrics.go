@@ -21,7 +21,7 @@ package p2p
 import (
 	"net"
 
-	"github.com/mysterium/go-ethereum/metrics"
+	"github.com/mysteriumnetwork/go-ethereum/metrics"
 )
 
 const (

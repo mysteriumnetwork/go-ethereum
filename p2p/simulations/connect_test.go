@@ -19,9 +19,9 @@ package simulations
 import (
 	"testing"
 
-	"github.com/mysterium/go-ethereum/node"
-	"github.com/mysterium/go-ethereum/p2p/enode"
-	"github.com/mysterium/go-ethereum/p2p/simulations/adapters"
+	"github.com/mysteriumnetwork/go-ethereum/node"
+	"github.com/mysteriumnetwork/go-ethereum/p2p/enode"
+	"github.com/mysteriumnetwork/go-ethereum/p2p/simulations/adapters"
 )
 
 func newTestNetwork(t *testing.T, nodeCount int) (*Network, []enode.ID) {

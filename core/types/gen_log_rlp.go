@@ -5,7 +5,7 @@
 
 package types
 
-import "github.com/mysterium/go-ethereum/rlp"
+import "github.com/mysteriumnetwork/go-ethereum/rlp"
 import "io"
 
 func (obj *rlpLog) EncodeRLP(_w io.Writer) error {

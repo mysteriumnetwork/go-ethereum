@@ -20,9 +20,8 @@ import (
 	"context"
 	"sync"
 
-	"github.com/mysterium/go-ethereum"
-	"github.com/mysterium/go-ethereum/event"
-	"github.com/mysterium/go-ethereum/rpc"
+	"github.com/mysteriumnetwork/go-ethereum/event"
+	"github.com/mysteriumnetwork/go-ethereum/rpc"
 )
 
 // PublicDownloaderAPI provides an API which gives information about the current synchronisation status.

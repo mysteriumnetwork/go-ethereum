@@ -24,7 +24,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/mysterium/go-ethereum/common"
+	"github.com/mysteriumnetwork/go-ethereum/common"
 )
 
 // Type enumerator

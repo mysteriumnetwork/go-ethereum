@@ -26,7 +26,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/mysterium/go-ethereum/common"
+	"github.com/mysteriumnetwork/go-ethereum/common"
 	"github.com/stretchr/testify/require"
 )
 

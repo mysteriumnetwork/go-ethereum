@@ -23,8 +23,8 @@ import (
 	"io/ioutil"
 	"testing"
 
-	"github.com/mysterium/go-ethereum/common"
-	"github.com/mysterium/go-ethereum/log"
+	"github.com/mysteriumnetwork/go-ethereum/common"
+	"github.com/mysteriumnetwork/go-ethereum/log"
 	"github.com/mattn/go-colorable"
 )
 

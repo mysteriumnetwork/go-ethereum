@@ -30,8 +30,8 @@ import (
 	"text/template"
 	"unicode"
 
-	"github.com/mysterium/go-ethereum/accounts/abi"
-	"github.com/mysterium/go-ethereum/log"
+	"github.com/mysteriumnetwork/go-ethereum/accounts/abi"
+	"github.com/mysteriumnetwork/go-ethereum/log"
 )
 
 // Lang is a target programming language selector to generate bindings for.

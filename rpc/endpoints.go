@@ -20,7 +20,7 @@ import (
 	"net"
 	"strings"
 
-	"github.com/mysterium/go-ethereum/log"
+	"github.com/mysteriumnetwork/go-ethereum/log"
 )
 
 // StartIPCEndpoint starts an IPC endpoint.

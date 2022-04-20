@@ -20,9 +20,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/mysterium/go-ethereum/cmd/devp2p/internal/v5test"
-	"github.com/mysterium/go-ethereum/common"
-	"github.com/mysterium/go-ethereum/p2p/discover"
+	"github.com/mysteriumnetwork/go-ethereum/cmd/devp2p/internal/v5test"
+	"github.com/mysteriumnetwork/go-ethereum/common"
+	"github.com/mysteriumnetwork/go-ethereum/p2p/discover"
 	"gopkg.in/urfave/cli.v1"
 )
 

@@ -19,7 +19,7 @@ package tests
 import (
 	"testing"
 
-	"github.com/mysterium/go-ethereum/params"
+	"github.com/mysteriumnetwork/go-ethereum/params"
 )
 
 func TestTransaction(t *testing.T) {

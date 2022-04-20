@@ -28,13 +28,13 @@ import (
 	"unicode"
 	"unsafe"
 
-	"github.com/mysterium/go-ethereum/common"
-	"github.com/mysterium/go-ethereum/common/hexutil"
-	"github.com/mysterium/go-ethereum/core/vm"
-	"github.com/mysterium/go-ethereum/crypto"
-	tracers2 "github.com/mysterium/go-ethereum/eth/tracers"
-	"github.com/mysterium/go-ethereum/eth/tracers/js/internal/tracers"
-	"github.com/mysterium/go-ethereum/log"
+	"github.com/mysteriumnetwork/go-ethereum/common"
+	"github.com/mysteriumnetwork/go-ethereum/common/hexutil"
+	"github.com/mysteriumnetwork/go-ethereum/core/vm"
+	"github.com/mysteriumnetwork/go-ethereum/crypto"
+	tracers2 "github.com/mysteriumnetwork/go-ethereum/eth/tracers"
+	"github.com/mysteriumnetwork/go-ethereum/eth/tracers/js/internal/tracers"
+	"github.com/mysteriumnetwork/go-ethereum/log"
 	"gopkg.in/olebedev/go-duktape.v3"
 )
 

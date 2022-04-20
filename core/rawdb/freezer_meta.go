@@ -20,8 +20,8 @@ import (
 	"io"
 	"os"
 
-	"github.com/mysterium/go-ethereum/log"
-	"github.com/mysterium/go-ethereum/rlp"
+	"github.com/mysteriumnetwork/go-ethereum/log"
+	"github.com/mysteriumnetwork/go-ethereum/rlp"
 )
 
 const freezerVersion = 1 // The initial version tag of freezer table metadata

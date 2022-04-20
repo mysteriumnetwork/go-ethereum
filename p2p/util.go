@@ -19,7 +19,7 @@ package p2p
 import (
 	"container/heap"
 
-	"github.com/mysterium/go-ethereum/common/mclock"
+	"github.com/mysteriumnetwork/go-ethereum/common/mclock"
 )
 
 // expHeap tracks strings and their expiry time.

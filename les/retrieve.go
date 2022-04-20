@@ -22,7 +22,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/mysterium/go-ethereum/light"
+	"github.com/mysteriumnetwork/go-ethereum/light"
 )
 
 var (

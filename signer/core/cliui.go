@@ -24,10 +24,10 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/mysterium/go-ethereum/common/hexutil"
-	"github.com/mysterium/go-ethereum/console/prompt"
-	"github.com/mysterium/go-ethereum/internal/ethapi"
-	"github.com/mysterium/go-ethereum/log"
+	"github.com/mysteriumnetwork/go-ethereum/common/hexutil"
+	"github.com/mysteriumnetwork/go-ethereum/console/prompt"
+	"github.com/mysteriumnetwork/go-ethereum/internal/ethapi"
+	"github.com/mysteriumnetwork/go-ethereum/log"
 )
 
 type CommandlineUI struct {

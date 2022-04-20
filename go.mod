@@ -1,4 +1,4 @@
-module github.com/mysterium/go-ethereum
+module github.com/mysteriumnetwork/go-ethereum
 
 go 1.15
 

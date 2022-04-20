@@ -25,7 +25,7 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/mysterium/go-ethereum/log"
+	"github.com/mysteriumnetwork/go-ethereum/log"
 )
 
 // ethstatsDockerfile is the Dockerfile required to build an ethstats backend

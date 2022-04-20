@@ -19,7 +19,7 @@ package abi
 import (
 	"math/big"
 
-	"github.com/mysterium/go-ethereum/common"
+	"github.com/mysteriumnetwork/go-ethereum/common"
 )
 
 type packUnpackTest struct {

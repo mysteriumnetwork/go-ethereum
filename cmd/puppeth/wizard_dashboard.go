@@ -19,7 +19,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/mysterium/go-ethereum/log"
+	"github.com/mysteriumnetwork/go-ethereum/log"
 )
 
 // deployDashboard queries the user for various input on deploying a web-service

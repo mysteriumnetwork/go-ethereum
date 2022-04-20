@@ -19,8 +19,8 @@ package eth
 import (
 	"time"
 
-	"github.com/mysterium/go-ethereum/common/bitutil"
-	"github.com/mysterium/go-ethereum/core/rawdb"
+	"github.com/mysteriumnetwork/go-ethereum/common/bitutil"
+	"github.com/mysteriumnetwork/go-ethereum/core/rawdb"
 )
 
 const (

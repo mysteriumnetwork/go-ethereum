@@ -25,15 +25,15 @@ import (
 	"testing"
 	"time"
 
-	"github.com/mysterium/go-ethereum/common"
-	"github.com/mysterium/go-ethereum/consensus/ethash"
-	"github.com/mysterium/go-ethereum/console/prompt"
-	"github.com/mysterium/go-ethereum/core"
-	"github.com/mysterium/go-ethereum/eth"
-	"github.com/mysterium/go-ethereum/eth/ethconfig"
-	"github.com/mysterium/go-ethereum/internal/jsre"
-	"github.com/mysterium/go-ethereum/miner"
-	"github.com/mysterium/go-ethereum/node"
+	"github.com/mysteriumnetwork/go-ethereum/common"
+	"github.com/mysteriumnetwork/go-ethereum/consensus/ethash"
+	"github.com/mysteriumnetwork/go-ethereum/console/prompt"
+	"github.com/mysteriumnetwork/go-ethereum/core"
+	"github.com/mysteriumnetwork/go-ethereum/eth"
+	"github.com/mysteriumnetwork/go-ethereum/eth/ethconfig"
+	"github.com/mysteriumnetwork/go-ethereum/internal/jsre"
+	"github.com/mysteriumnetwork/go-ethereum/miner"
+	"github.com/mysteriumnetwork/go-ethereum/node"
 )
 
 const (

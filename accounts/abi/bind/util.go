@@ -21,10 +21,9 @@ import (
 	"errors"
 	"time"
 
-	"github.com/mysterium/go-ethereum"
-	"github.com/mysterium/go-ethereum/common"
-	"github.com/mysterium/go-ethereum/core/types"
-	"github.com/mysterium/go-ethereum/log"
+	"github.com/mysteriumnetwork/go-ethereum/common"
+	"github.com/mysteriumnetwork/go-ethereum/core/types"
+	"github.com/mysteriumnetwork/go-ethereum/log"
 )
 
 // WaitMined waits for tx to be mined on the blockchain.

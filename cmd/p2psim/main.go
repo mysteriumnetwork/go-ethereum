@@ -45,12 +45,12 @@ import (
 	"strings"
 	"text/tabwriter"
 
-	"github.com/mysterium/go-ethereum/crypto"
-	"github.com/mysterium/go-ethereum/p2p"
-	"github.com/mysterium/go-ethereum/p2p/enode"
-	"github.com/mysterium/go-ethereum/p2p/simulations"
-	"github.com/mysterium/go-ethereum/p2p/simulations/adapters"
-	"github.com/mysterium/go-ethereum/rpc"
+	"github.com/mysteriumnetwork/go-ethereum/crypto"
+	"github.com/mysteriumnetwork/go-ethereum/p2p"
+	"github.com/mysteriumnetwork/go-ethereum/p2p/enode"
+	"github.com/mysteriumnetwork/go-ethereum/p2p/simulations"
+	"github.com/mysteriumnetwork/go-ethereum/p2p/simulations/adapters"
+	"github.com/mysteriumnetwork/go-ethereum/rpc"
 	"gopkg.in/urfave/cli.v1"
 )
 

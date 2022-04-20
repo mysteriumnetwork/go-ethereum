@@ -21,11 +21,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/mysterium/go-ethereum/eth"
-	"github.com/mysterium/go-ethereum/eth/ethconfig"
-	"github.com/mysterium/go-ethereum/internal/utesting"
-	"github.com/mysterium/go-ethereum/node"
-	"github.com/mysterium/go-ethereum/p2p"
+	"github.com/mysteriumnetwork/go-ethereum/eth"
+	"github.com/mysteriumnetwork/go-ethereum/eth/ethconfig"
+	"github.com/mysteriumnetwork/go-ethereum/internal/utesting"
+	"github.com/mysteriumnetwork/go-ethereum/node"
+	"github.com/mysteriumnetwork/go-ethereum/p2p"
 )
 
 var (

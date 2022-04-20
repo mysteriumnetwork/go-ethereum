@@ -21,10 +21,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/mysterium/go-ethereum/eth/protocols/eth"
-	"github.com/mysterium/go-ethereum/p2p"
-	"github.com/mysterium/go-ethereum/p2p/rlpx"
-	"github.com/mysterium/go-ethereum/rlp"
+	"github.com/mysteriumnetwork/go-ethereum/eth/protocols/eth"
+	"github.com/mysteriumnetwork/go-ethereum/p2p"
+	"github.com/mysteriumnetwork/go-ethereum/p2p/rlpx"
+	"github.com/mysteriumnetwork/go-ethereum/rlp"
 )
 
 type Message interface {

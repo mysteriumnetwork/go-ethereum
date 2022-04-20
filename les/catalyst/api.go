@@ -21,12 +21,12 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/mysterium/go-ethereum/common"
-	"github.com/mysterium/go-ethereum/core/beacon"
-	"github.com/mysterium/go-ethereum/les"
-	"github.com/mysterium/go-ethereum/log"
-	"github.com/mysterium/go-ethereum/node"
-	"github.com/mysterium/go-ethereum/rpc"
+	"github.com/mysteriumnetwork/go-ethereum/common"
+	"github.com/mysteriumnetwork/go-ethereum/core/beacon"
+	"github.com/mysteriumnetwork/go-ethereum/les"
+	"github.com/mysteriumnetwork/go-ethereum/log"
+	"github.com/mysteriumnetwork/go-ethereum/node"
+	"github.com/mysteriumnetwork/go-ethereum/rpc"
 )
 
 // Register adds catalyst APIs to the light client.

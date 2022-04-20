@@ -20,12 +20,12 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/mysterium/go-ethereum/cmd/devp2p/internal/ethtest"
-	"github.com/mysterium/go-ethereum/crypto"
-	"github.com/mysterium/go-ethereum/internal/utesting"
-	"github.com/mysterium/go-ethereum/p2p"
-	"github.com/mysterium/go-ethereum/p2p/rlpx"
-	"github.com/mysterium/go-ethereum/rlp"
+	"github.com/mysteriumnetwork/go-ethereum/cmd/devp2p/internal/ethtest"
+	"github.com/mysteriumnetwork/go-ethereum/crypto"
+	"github.com/mysteriumnetwork/go-ethereum/internal/utesting"
+	"github.com/mysteriumnetwork/go-ethereum/p2p"
+	"github.com/mysteriumnetwork/go-ethereum/p2p/rlpx"
+	"github.com/mysteriumnetwork/go-ethereum/rlp"
 	"gopkg.in/urfave/cli.v1"
 )
 

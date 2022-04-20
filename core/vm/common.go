@@ -17,8 +17,8 @@
 package vm
 
 import (
-	"github.com/mysterium/go-ethereum/common"
-	"github.com/mysterium/go-ethereum/common/math"
+	"github.com/mysteriumnetwork/go-ethereum/common"
+	"github.com/mysteriumnetwork/go-ethereum/common/math"
 	"github.com/holiman/uint256"
 )
 

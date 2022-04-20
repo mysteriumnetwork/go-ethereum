@@ -19,9 +19,9 @@ package main
 import (
 	"os"
 
-	"github.com/mysterium/go-ethereum/cmd/devp2p/internal/v4test"
-	"github.com/mysterium/go-ethereum/internal/utesting"
-	"github.com/mysterium/go-ethereum/log"
+	"github.com/mysteriumnetwork/go-ethereum/cmd/devp2p/internal/v4test"
+	"github.com/mysteriumnetwork/go-ethereum/internal/utesting"
+	"github.com/mysteriumnetwork/go-ethereum/log"
 	"gopkg.in/urfave/cli.v1"
 )
 

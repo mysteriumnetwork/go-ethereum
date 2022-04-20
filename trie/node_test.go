@@ -20,7 +20,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/mysterium/go-ethereum/rlp"
+	"github.com/mysteriumnetwork/go-ethereum/rlp"
 )
 
 func newTestFullNode(v []byte) []interface{} {

@@ -26,10 +26,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/mysterium/go-ethereum/common"
-	"github.com/mysterium/go-ethereum/core/types"
-	"github.com/mysterium/go-ethereum/internal/testlog"
-	"github.com/mysterium/go-ethereum/log"
+	"github.com/mysteriumnetwork/go-ethereum/common"
+	"github.com/mysteriumnetwork/go-ethereum/core/types"
+	"github.com/mysteriumnetwork/go-ethereum/internal/testlog"
+	"github.com/mysteriumnetwork/go-ethereum/log"
 )
 
 // Tests whether remote HTTP servers are correctly notified of new work.

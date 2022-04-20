@@ -25,17 +25,17 @@ import (
 	"os"
 	"reflect"
 
-	"github.com/mysterium/go-ethereum/accounts"
-	"github.com/mysterium/go-ethereum/accounts/keystore"
-	"github.com/mysterium/go-ethereum/accounts/scwallet"
-	"github.com/mysterium/go-ethereum/accounts/usbwallet"
-	"github.com/mysterium/go-ethereum/common"
-	"github.com/mysterium/go-ethereum/common/hexutil"
-	"github.com/mysterium/go-ethereum/internal/ethapi"
-	"github.com/mysterium/go-ethereum/log"
-	"github.com/mysterium/go-ethereum/rpc"
-	"github.com/mysterium/go-ethereum/signer/core/apitypes"
-	"github.com/mysterium/go-ethereum/signer/storage"
+	"github.com/mysteriumnetwork/go-ethereum/accounts"
+	"github.com/mysteriumnetwork/go-ethereum/accounts/keystore"
+	"github.com/mysteriumnetwork/go-ethereum/accounts/scwallet"
+	"github.com/mysteriumnetwork/go-ethereum/accounts/usbwallet"
+	"github.com/mysteriumnetwork/go-ethereum/common"
+	"github.com/mysteriumnetwork/go-ethereum/common/hexutil"
+	"github.com/mysteriumnetwork/go-ethereum/internal/ethapi"
+	"github.com/mysteriumnetwork/go-ethereum/log"
+	"github.com/mysteriumnetwork/go-ethereum/rpc"
+	"github.com/mysteriumnetwork/go-ethereum/signer/core/apitypes"
+	"github.com/mysteriumnetwork/go-ethereum/signer/storage"
 )
 
 const (

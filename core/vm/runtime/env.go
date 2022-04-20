@@ -17,8 +17,8 @@
 package runtime
 
 import (
-	"github.com/mysterium/go-ethereum/core"
-	"github.com/mysterium/go-ethereum/core/vm"
+	"github.com/mysteriumnetwork/go-ethereum/core"
+	"github.com/mysteriumnetwork/go-ethereum/core/vm"
 )
 
 func NewEnv(cfg *Config) *vm.EVM {

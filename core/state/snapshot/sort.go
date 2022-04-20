@@ -19,7 +19,7 @@ package snapshot
 import (
 	"bytes"
 
-	"github.com/mysterium/go-ethereum/common"
+	"github.com/mysteriumnetwork/go-ethereum/common"
 )
 
 // hashes is a helper to implement sort.Interface.

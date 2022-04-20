@@ -20,8 +20,8 @@
 package node
 
 import (
-	"github.com/mysterium/go-ethereum/p2p"
-	"github.com/mysterium/go-ethereum/rpc"
+	"github.com/mysteriumnetwork/go-ethereum/p2p"
+	"github.com/mysteriumnetwork/go-ethereum/rpc"
 )
 
 // NoopLifecycle is a trivial implementation of the Service interface.

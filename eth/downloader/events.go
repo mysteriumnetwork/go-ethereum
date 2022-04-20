@@ -16,7 +16,7 @@
 
 package downloader
 
-import "github.com/mysterium/go-ethereum/core/types"
+import "github.com/mysteriumnetwork/go-ethereum/core/types"
 
 type DoneEvent struct {
 	Latest *types.Header

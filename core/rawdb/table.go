@@ -17,7 +17,7 @@
 package rawdb
 
 import (
-	"github.com/mysterium/go-ethereum/ethdb"
+	"github.com/mysteriumnetwork/go-ethereum/ethdb"
 )
 
 // table is a wrapper around a database that prefixes each key access with a pre-

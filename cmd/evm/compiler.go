@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"io/ioutil"
 
-	"github.com/mysterium/go-ethereum/cmd/evm/internal/compiler"
+	"github.com/mysteriumnetwork/go-ethereum/cmd/evm/internal/compiler"
 
 	"gopkg.in/urfave/cli.v1"
 )

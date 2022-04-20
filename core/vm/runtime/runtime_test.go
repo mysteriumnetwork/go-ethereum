@@ -24,21 +24,21 @@ import (
 	"testing"
 	"time"
 
-	"github.com/mysterium/go-ethereum/accounts/abi"
-	"github.com/mysterium/go-ethereum/common"
-	"github.com/mysterium/go-ethereum/consensus"
-	"github.com/mysterium/go-ethereum/core"
-	"github.com/mysterium/go-ethereum/core/asm"
-	"github.com/mysterium/go-ethereum/core/rawdb"
-	"github.com/mysterium/go-ethereum/core/state"
-	"github.com/mysterium/go-ethereum/core/types"
-	"github.com/mysterium/go-ethereum/core/vm"
-	"github.com/mysterium/go-ethereum/eth/tracers"
-	"github.com/mysterium/go-ethereum/eth/tracers/logger"
-	"github.com/mysterium/go-ethereum/params"
+	"github.com/mysteriumnetwork/go-ethereum/accounts/abi"
+	"github.com/mysteriumnetwork/go-ethereum/common"
+	"github.com/mysteriumnetwork/go-ethereum/consensus"
+	"github.com/mysteriumnetwork/go-ethereum/core"
+	"github.com/mysteriumnetwork/go-ethereum/core/asm"
+	"github.com/mysteriumnetwork/go-ethereum/core/rawdb"
+	"github.com/mysteriumnetwork/go-ethereum/core/state"
+	"github.com/mysteriumnetwork/go-ethereum/core/types"
+	"github.com/mysteriumnetwork/go-ethereum/core/vm"
+	"github.com/mysteriumnetwork/go-ethereum/eth/tracers"
+	"github.com/mysteriumnetwork/go-ethereum/eth/tracers/logger"
+	"github.com/mysteriumnetwork/go-ethereum/params"
 
 	// force-load js tracers to trigger registration
-	_ "github.com/mysterium/go-ethereum/eth/tracers/js"
+	_ "github.com/mysteriumnetwork/go-ethereum/eth/tracers/js"
 )
 
 func TestDefaults(t *testing.T) {

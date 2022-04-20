@@ -19,7 +19,7 @@ package utils
 import (
 	"fmt"
 
-	"github.com/mysterium/go-ethereum/eth/ethconfig"
+	"github.com/mysteriumnetwork/go-ethereum/eth/ethconfig"
 	"gopkg.in/urfave/cli.v1"
 )
 
