@@ -20,8 +20,8 @@ import (
 	json "github.com/json-iterator/go"
 	"net/http"
 
-	"github.com/ethereum/go-ethereum/internal/ethapi"
-	"github.com/ethereum/go-ethereum/node"
+	"github.com/mysterium/go-ethereum/internal/ethapi"
+	"github.com/mysterium/go-ethereum/node"
 	"github.com/graph-gophers/graphql-go"
 )
 

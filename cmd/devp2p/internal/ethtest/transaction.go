@@ -22,11 +22,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/internal/utesting"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/mysterium/go-ethereum/common"
+	"github.com/mysterium/go-ethereum/core/types"
+	"github.com/mysterium/go-ethereum/crypto"
+	"github.com/mysterium/go-ethereum/internal/utesting"
+	"github.com/mysterium/go-ethereum/params"
 )
 
 //var faucetAddr = common.HexToAddress("0x71562b71999873DB5b286dF957af199Ec94617F7")

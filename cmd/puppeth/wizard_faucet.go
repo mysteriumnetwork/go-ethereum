@@ -20,8 +20,8 @@ import (
 	json "github.com/json-iterator/go"
 	"fmt"
 
-	"github.com/ethereum/go-ethereum/accounts/keystore"
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/mysterium/go-ethereum/accounts/keystore"
+	"github.com/mysterium/go-ethereum/log"
 )
 
 // deployFaucet queries the user for various input on deploying a faucet, after

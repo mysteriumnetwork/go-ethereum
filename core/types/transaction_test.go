@@ -27,9 +27,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/mysterium/go-ethereum/common"
+	"github.com/mysterium/go-ethereum/crypto"
+	"github.com/mysterium/go-ethereum/rlp"
 )
 
 // The values in those tests are from the Transaction Tests

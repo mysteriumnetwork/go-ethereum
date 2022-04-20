@@ -21,13 +21,13 @@ import (
 	"encoding/binary"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/mclock"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/les/utils"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/mysterium/go-ethereum/common"
+	"github.com/mysterium/go-ethereum/common/mclock"
+	"github.com/mysterium/go-ethereum/ethdb"
+	"github.com/mysterium/go-ethereum/les/utils"
+	"github.com/mysterium/go-ethereum/log"
+	"github.com/mysterium/go-ethereum/p2p/enode"
+	"github.com/mysterium/go-ethereum/rlp"
 	lru "github.com/hashicorp/golang-lru"
 )
 

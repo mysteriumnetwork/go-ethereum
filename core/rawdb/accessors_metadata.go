@@ -20,11 +20,11 @@ import (
 	json "github.com/json-iterator/go"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/mysterium/go-ethereum/common"
+	"github.com/mysterium/go-ethereum/ethdb"
+	"github.com/mysterium/go-ethereum/log"
+	"github.com/mysterium/go-ethereum/params"
+	"github.com/mysterium/go-ethereum/rlp"
 )
 
 // ReadDatabaseVersion retrieves the version number of the database.

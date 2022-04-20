@@ -5,10 +5,10 @@ package logger
 import (
 	json "github.com/json-iterator/go"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/common/math"
-	"github.com/ethereum/go-ethereum/core/vm"
+	"github.com/mysterium/go-ethereum/common"
+	"github.com/mysterium/go-ethereum/common/hexutil"
+	"github.com/mysterium/go-ethereum/common/math"
+	"github.com/mysterium/go-ethereum/core/vm"
 	"github.com/holiman/uint256"
 )
 

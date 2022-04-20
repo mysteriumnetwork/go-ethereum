@@ -25,17 +25,17 @@ import (
 	"os"
 	"reflect"
 
-	"github.com/ethereum/go-ethereum/accounts"
-	"github.com/ethereum/go-ethereum/accounts/keystore"
-	"github.com/ethereum/go-ethereum/accounts/scwallet"
-	"github.com/ethereum/go-ethereum/accounts/usbwallet"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/internal/ethapi"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/rpc"
-	"github.com/ethereum/go-ethereum/signer/core/apitypes"
-	"github.com/ethereum/go-ethereum/signer/storage"
+	"github.com/mysterium/go-ethereum/accounts"
+	"github.com/mysterium/go-ethereum/accounts/keystore"
+	"github.com/mysterium/go-ethereum/accounts/scwallet"
+	"github.com/mysterium/go-ethereum/accounts/usbwallet"
+	"github.com/mysterium/go-ethereum/common"
+	"github.com/mysterium/go-ethereum/common/hexutil"
+	"github.com/mysterium/go-ethereum/internal/ethapi"
+	"github.com/mysterium/go-ethereum/log"
+	"github.com/mysterium/go-ethereum/rpc"
+	"github.com/mysterium/go-ethereum/signer/core/apitypes"
+	"github.com/mysterium/go-ethereum/signer/storage"
 )
 
 const (

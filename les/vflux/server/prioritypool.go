@@ -21,11 +21,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common/mclock"
-	"github.com/ethereum/go-ethereum/common/prque"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/p2p/nodestate"
+	"github.com/mysterium/go-ethereum/common/mclock"
+	"github.com/mysterium/go-ethereum/common/prque"
+	"github.com/mysterium/go-ethereum/log"
+	"github.com/mysterium/go-ethereum/p2p/enode"
+	"github.com/mysterium/go-ethereum/p2p/nodestate"
 )
 
 const (

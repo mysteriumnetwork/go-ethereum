@@ -21,8 +21,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/rawdb"
+	"github.com/mysterium/go-ethereum/common"
+	"github.com/mysterium/go-ethereum/core/rawdb"
 )
 
 func filledStateDB() *StateDB {

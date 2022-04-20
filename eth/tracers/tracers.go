@@ -21,8 +21,8 @@ import (
 	"errors"
 	stdjson "encoding/json"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/vm"
+	"github.com/mysterium/go-ethereum/common"
+	"github.com/mysterium/go-ethereum/core/vm"
 )
 
 // Context contains some contextual infos for a transaction execution that is not

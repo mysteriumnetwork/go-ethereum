@@ -6,8 +6,8 @@ import (
 	json "github.com/json-iterator/go"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/math"
+	"github.com/mysterium/go-ethereum/common"
+	"github.com/mysterium/go-ethereum/common/math"
 )
 
 var _ = (*difficultyTestMarshaling)(nil)

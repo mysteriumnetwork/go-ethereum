@@ -23,7 +23,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
+	"github.com/mysterium/go-ethereum/common"
 )
 
 const testSectionSize = 4096

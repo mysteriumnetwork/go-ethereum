@@ -22,17 +22,17 @@ import (
 	"io"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus/ethash"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/crypto"
-	l "github.com/ethereum/go-ethereum/les"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/rlp"
-	"github.com/ethereum/go-ethereum/trie"
+	"github.com/mysterium/go-ethereum/common"
+	"github.com/mysterium/go-ethereum/consensus/ethash"
+	"github.com/mysterium/go-ethereum/core"
+	"github.com/mysterium/go-ethereum/core/rawdb"
+	"github.com/mysterium/go-ethereum/core/types"
+	"github.com/mysterium/go-ethereum/core/vm"
+	"github.com/mysterium/go-ethereum/crypto"
+	l "github.com/mysterium/go-ethereum/les"
+	"github.com/mysterium/go-ethereum/params"
+	"github.com/mysterium/go-ethereum/rlp"
+	"github.com/mysterium/go-ethereum/trie"
 )
 
 var (

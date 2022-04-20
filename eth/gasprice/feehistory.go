@@ -26,11 +26,11 @@ import (
 	"sort"
 	"sync/atomic"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus/misc"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/mysterium/go-ethereum/common"
+	"github.com/mysterium/go-ethereum/consensus/misc"
+	"github.com/mysterium/go-ethereum/core/types"
+	"github.com/mysterium/go-ethereum/log"
+	"github.com/mysterium/go-ethereum/rpc"
 )
 
 var (

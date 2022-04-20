@@ -20,8 +20,8 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/mysterium/go-ethereum/common"
+	"github.com/mysterium/go-ethereum/params"
 )
 
 var (

@@ -20,10 +20,10 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/mysterium/go-ethereum/core/rawdb"
+	"github.com/mysterium/go-ethereum/ethdb"
+	"github.com/mysterium/go-ethereum/log"
+	"github.com/mysterium/go-ethereum/rlp"
 )
 
 // transitionStatus describes the status of eth1/2 transition. This switch

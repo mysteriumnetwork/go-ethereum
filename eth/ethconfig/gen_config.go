@@ -6,13 +6,13 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus/ethash"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/eth/downloader"
-	"github.com/ethereum/go-ethereum/eth/gasprice"
-	"github.com/ethereum/go-ethereum/miner"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/mysterium/go-ethereum/common"
+	"github.com/mysterium/go-ethereum/consensus/ethash"
+	"github.com/mysterium/go-ethereum/core"
+	"github.com/mysterium/go-ethereum/eth/downloader"
+	"github.com/mysterium/go-ethereum/eth/gasprice"
+	"github.com/mysterium/go-ethereum/miner"
+	"github.com/mysterium/go-ethereum/params"
 )
 
 // MarshalTOML marshals as TOML.

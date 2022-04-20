@@ -20,11 +20,11 @@ import (
 	"context"
 	json "github.com/json-iterator/go"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/internal/ethapi"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/signer/core/apitypes"
+	"github.com/mysterium/go-ethereum/common"
+	"github.com/mysterium/go-ethereum/common/hexutil"
+	"github.com/mysterium/go-ethereum/internal/ethapi"
+	"github.com/mysterium/go-ethereum/log"
+	"github.com/mysterium/go-ethereum/signer/core/apitypes"
 )
 
 type AuditLogger struct {
